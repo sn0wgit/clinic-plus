@@ -9,9 +9,9 @@
  <body>
   <div class="wrapper container">
    <header class="header">
-    <div class="header__body container">
+    <div class="header__body">
      <div class="header__top">
-       <div class="header__top-row">
+      <div class="header__top-row">
         <a class="header__logo" href="index.html">
          <img class="header__logo-image" src="src/imgs/header/header__logo.svg" alt="Клиника плюс">
         </a>
@@ -41,24 +41,26 @@
          </ul>
         </nav>
         </div>        
-       </div>
-       <div class="header__top-row">
-        <address class="header__address" data-da=".header__menu, 1248, 3">
-         <a href="tel:88001234567" class="header__address-phone">8 (800) 123-45-67</a>
-         <span class="header__address-text">г. Богучар, ул. Мжд Киевское 17-й км</span>
-        </address>
-        <button class="header__search-button button white" type="button" aria-label="Нажмите, чтобы начать поиск">
-         <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <button class="button blue" type="button" data-da=".header__menu, 1248, 1">
-         <span>Срочный вызов врача</span>
-        </button>
-       </div>
+      </div>
+      <div class="header__top-row">
+       <address class="header__address" data-da=".header__menu, 1248, 3">
+        <a href="tel:88001234567" class="header__address-phone">8 (800) 123-45-67</a>
+        <span class="header__address-text">г. Богучар, ул. Мжд Киевское 17-й км</span>
+       </address>
+       <button class="header__menu-button" type="button" aria-label="Мобильное меню" aria-expanded="false">
+        <span class="header__menu-button-icon">
+         <span></span>
+        </span>
+       </button>
+       <button class="button blue" type="button" data-da=".header__menu, 1248, 1">
+        <span>Срочный вызов врача</span>
+       </button>
+      </div>
      </div>
      <div class="header__bottom">
       <div class="header__dropdowns" data-da=".header__menu, 1248, 0">
        <div class="header__dropdown">
-        <button class="header__dropdown-button" type="button">
+        <button class="header__dropdown-button" type="button" aria-expanded="false">
          <span>Наркомания</span>
          <span class="header__dropdown-button-icon"></span>
         </button>
@@ -85,7 +87,7 @@
         </div>
        </div>
        <div class="header__dropdown">
-        <button class="header__dropdown-button" type="button">
+        <button class="header__dropdown-button" type="button" aria-expanded="false">
          <span>Алкоголизм</span>
          <span class="header__dropdown-button-icon plus"></span>
         </button>
@@ -112,7 +114,7 @@
         </div>
        </div>
        <div class="header__dropdown">
-        <button class="header__dropdown-button" type="button">
+        <button class="header__dropdown-button" type="button" aria-expanded="false">
          <span>Реабилитация</span>
          <span class="header__dropdown-button-icon plus"></span>
         </button>
@@ -139,7 +141,7 @@
         </div>
        </div>
        <div class="header__dropdown">
-        <button class="header__dropdown-button" type="button">
+        <button class="header__dropdown-button" type="button" aria-expanded="false">
          <span>Кодирование</span>
          <span class="header__dropdown-button-icon plus"></span>
         </button>
@@ -167,7 +169,7 @@
        </div>
        <a class="header__dropdowns-link" href="#!">Цены</a>
        <div class="header__dropdown">
-        <button class="header__dropdown-button" type="button">
+        <button class="header__dropdown-button" type="button" aria-expanded="false">
          <span>О клинике</span>
          <span class="header__dropdown-button-icon plus"></span>
         </button>
@@ -197,11 +199,6 @@
       </div>
      </div>
      <div class="header__menu"></div>
-     <button class="header__menu-button" type="button">
-      <span class="header__menu-button-icon">
-       <span></span>
-      </span>
-     </button>
     </div>
    </header>
   </div>

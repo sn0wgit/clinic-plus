@@ -46,7 +46,7 @@ html.--lock {
 .container {
   width: 100%;
   margin: 0px auto;
-  max-width: 1800px;
+  max-width: 1600px;
 }
 
 .fullscreen {
@@ -58,7 +58,6 @@ html.--lock {
   display: flex;
   min-height: 100dvh;
   flex-direction: column;
-  padding: 0px 84px;
   border-left: 1px solid #D7E2FF;
   border-right: 1px solid #D7E2FF;
 }
