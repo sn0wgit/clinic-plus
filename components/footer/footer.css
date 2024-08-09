@@ -161,7 +161,7 @@
 }
 
 .footer__dropdown:hover .footer__dropdown-button {
-  color: #1B315F !important;
+  color: #1B315F;
 }
 
 .footer__link {
