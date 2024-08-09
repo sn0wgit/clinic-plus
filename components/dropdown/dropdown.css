@@ -1,0 +1,99 @@
+.dropdown {
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown:hover {
+  background-color: white;
+  box-shadow: 0px -6px 24px 0px rgb(27 49 95 / 15%);
+}
+
+.dropdown__button {
+  color: #1B315F;
+  padding: 8px 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font: normal 500 1.125rem "Montserrat-Medium";
+}
+
+.dropdown__button-icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown__button-icon::before,
+.dropdown__button-icon::after {
+  content: "";
+  width: 2px;
+  height: 12px;
+  position: relative;
+  display: inline-block;
+  background-color: #2770F1;
+}
+
+.dropdown__button-icon::after {
+  rotate: -90deg;
+  left: -2px;
+}
+
+.dropdown__content {
+  width: 100%;
+  padding: 8px 0px;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  flex-direction: column;
+}
+
+.dropdown:hover .dropdown__content {
+  opacity: 1;
+  visibility: visible;
+  background-color: white;
+  box-shadow: 0px 20px 24px 0px rgb(27 49 95 / 15%);
+}
+
+.dropdown.open .dropdown__content {
+  opacity: 1;
+  visibility: visible;
+  background-color: white;
+  box-shadow: 0px 20px 24px 0px rgb(27 49 95 / 15%);
+}
+
+.dropdown__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown__list {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.dropdown__link {
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  color: #1B315F;
+}
+
+@media (hover:hover) {
+  .dropdown__link:hover {
+    opacity: var(--opacity);
+  }
+}
+
+.dropdown__link:active {
+  scale: var(--scale);
+}

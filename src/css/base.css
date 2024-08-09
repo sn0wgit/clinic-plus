@@ -3,6 +3,7 @@
 /* components */ 
 
 @import url("../../components/header/header.css");
+@import url("../../components/dropdown/dropdown.css");
 @import url("../../components/button/button.css");
 @import url("../../components/footer/footer.css");
 
@@ -10,11 +11,13 @@
 
 /* blocks */ 
 
+@import url("../../blocks/cta/cta.css");
 
 /* blocks */ 
 
 /* libraries */ 
 
+@import url("../libraries/simplebar/simplebar.css");
 
 /* libraries */ 
 
