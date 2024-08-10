@@ -12,6 +12,10 @@
   font-size: clamp(1.625rem, 5vw, 2.75rem);
 }
 
+.title.white {
+  color: white;
+}
+
 .title__mark {
   font-weight: 400;
   font-family: "Montserrat-Regular";
