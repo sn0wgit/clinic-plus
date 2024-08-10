@@ -1,0 +1,18 @@
+.title {
+  color: #1B315F;
+  font: normal 800 clamp(1.75rem, 5vw, 3.5rem)/115% "Montserrat-ExtraBold";
+}
+
+.title.decor {
+  padding-inline-start: 20px;
+  border-left: 5px solid #2770F1;
+}
+
+.title.medium {
+  font-size: clamp(1.625rem, 5vw, 2.75rem);
+}
+
+.title__mark {
+  font-weight: 400;
+  font-family: "Montserrat-Regular";
+}

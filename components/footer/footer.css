@@ -9,10 +9,11 @@
   width: 100%;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer__column {
+  width: 100%;
   display: flex;
   gap: 25px;
   flex-direction: column;
@@ -136,6 +137,23 @@
 
 .footer__socials-link:active {
   scale: var(--scale);
+}
+
+.footer__row {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+
+.footer__map {
+  width: 585px;
+  height: 280px;
+  padding: 8px 12px;
+}
+
+.footer__map-iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .footer__links {
