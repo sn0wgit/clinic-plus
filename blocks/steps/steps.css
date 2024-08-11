@@ -5,19 +5,19 @@
   flex-direction: column;
   justify-content: center;
   background-color: #163063;
-  padding: 55px var(--padding);
+  padding: 55px 630px 55px 128px;
+  min-height: 839px;
 }
 
 .steps::before {
   content: "";
-  width: 125px;
-  height: 320px;
-  object-fit: cover;
+  width: 126px;
+  height: 327px;
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  left: -40px;
+  bottom: 30px;
   display: inline-block;
-  background: url("../../src/imgs/decor/decor.svg") center / cover no-repeat;
+  background: url("../../src/imgs/decor/decor.svg") top right / contain repeat;
 }
 
 .steps::after {
@@ -27,9 +27,9 @@
   object-fit: cover;
   position: absolute;
   right: 0px;
-  top: -130px;
+  top: -70px;
   display: inline-block;
-  background: url("../../src/imgs/decor/decor.svg") center / cover no-repeat;
+  background: url("../../src/imgs/decor/decor.svg") top left / contain repeat;
 }
 
 .steps__body {
@@ -38,6 +38,10 @@
   gap: 140px;
   flex-direction: column;
   justify-content: center;
+}
+
+.steps__body.container {
+  max-width: unset;
 }
 
 .steps__title {
@@ -55,6 +59,10 @@
   content: "";
   width: 630px;
   height: 700px;
+  position: absolute;
+  right: 0px;
+  top: 175px;
+  z-index: 1;
   object-fit: cover;
   display: inline-block;
   border-radius: 112px 0px 0px 0px;
@@ -65,7 +73,7 @@
 
 .steps__list {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1111px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -74,8 +82,9 @@
 }
 
 .steps__card {
-  min-width: 320px;
-  min-height: 150px;
+  min-width: calc(1051px / 3);
+  max-width: calc(1051px / 3);
+  min-height: 188px;
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -92,7 +101,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 50% 50% 50% 0%;
   background-color: #2770F1;
   box-shadow: 0px 4px 24px 0px rgb(27 49 95 / 15%);
   font: normal bold clamp(1.5rem, 5vw, 2.5rem) "Montserrat-Bold";
@@ -107,4 +116,22 @@
   color: #1B315F;
   max-width: 320px;
   font: normal 500 1rem "Montserrat-Medium";
+}
+
+@media (max-width: 1180px) {
+  .steps::after {
+    display: none;
+  }
+
+  .steps::before {
+    display: none;
+  }
+
+  .steps__content::after {
+    position: static;
+  }
+
+  .steps__list {
+    max-width: unset;
+  }
 }

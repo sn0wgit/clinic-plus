@@ -19,12 +19,14 @@
 @import url("../../blocks/licenses/licenses.css");
 @import url("../../blocks/about/about.css");
 @import url("../../blocks/doctors/doctors.css");
+@import url("../../blocks/reports/reports.css");
 
 /* blocks */ 
 
 /* libraries */ 
 
 @import url("../libraries/simplebar/simplebar.css");
+@import url("../libraries/swiper/swiper-bundle.min.css");
 
 /* libraries */ 
 

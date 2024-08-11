@@ -4,6 +4,9 @@ header();
 import { dropdown } from "../components/dropdown/dropdown.js"
 dropdown();
 
+import { reports } from "../blocks/reports/reports.js"
+reports();
+
 import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();
 
