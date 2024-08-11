@@ -20,6 +20,7 @@
 }
 
 .footer__logo {
+  width: fit-content;
   color: white;
   display: flex;
   gap: 10px;
@@ -27,6 +28,16 @@
   align-items: center;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+
+@media (hover:hover) {
+  .footer__logo:hover {
+    opacity: var(--opacity);
+  }
+}
+
+.footer__logo:active {
+  scale: var(--scale);
 }
 
 .footer__logo-icon {

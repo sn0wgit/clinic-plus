@@ -1,0 +1,36 @@
+.licenses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding) var(--padding) 80px;
+}
+
+.licenses__body {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid var(--mainBorderColor);
+  border-right: 1px solid var(--mainBorderColor);
+}
+
+.licenses__title {
+  max-width: 780px;
+}
+
+.licenses__list {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.licenses__card {
+  width: 400px;
+  min-height: 570px;
+  border: 12px solid white;
+  box-shadow: 0px 4px 24px 0px rgb(27 49 95 / 15%);
+}
