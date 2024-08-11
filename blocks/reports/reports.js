@@ -1,7 +1,6 @@
 export const reports = () => {
   new Swiper(".reports__slider", {
-    breakpoints: {
-
-    }
+    slidesPerView: 2,
+    spaceBetween: 50,
   });
 };
