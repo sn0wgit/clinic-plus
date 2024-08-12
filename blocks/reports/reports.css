@@ -30,12 +30,6 @@
 
 .reports__slider-wrapper {
   width: 100%;
-  max-width: 1500px;
-  overflow: hidden;
-}
-
-.reports__slider-wrapper.swiper-wrapper .swiper-slide {
-  flex-shrink: 1;
 }
 
 .reports__card {
@@ -77,6 +71,7 @@
 .reports__slider-menu {
   width: 100%;
   position: absolute;
+  z-index: 1;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -84,8 +79,27 @@
 }
 
 .reports__slider-button {
-  width: 105px;
+  color: #2770F1;
+  padding: 25px;
+  width: 170px;
   min-height: 115px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: end;
+  background-color: #F1F5FF;
+  font: normal 600 1.125rem "Montserrat-SemiBold";
+}
+
+.reports__slider-button:nth-child(2) {
+  justify-content: start;
+}
+
+@media (hover:hover) {
+  .reports__slider-button:hover {
+    opacity: var(--opacity);
+  }
+}
+
+.reports__slider-button:active {
+  scale: var(--scale);
 }
