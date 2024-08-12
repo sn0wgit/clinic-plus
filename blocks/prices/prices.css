@@ -74,9 +74,17 @@
 }
 
 @media (max-width: 1080px) {
+  .prices__body {
+    gap: 16px;
+  }
+
   .prices__list-link {
     align-items: start;
     flex-direction: column;
+  }
+
+  .prices__list-link-decor {
+    text-wrap: wrap;
   }
 
   .prices__list-link-decor::after {

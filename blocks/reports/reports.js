@@ -6,5 +6,11 @@ export const reports = () => {
       nextEl: ".reports__slider-button.next",
       prevEl: ".reports__slider-button.prev",
     },
+    breakpoints: {
+      1080: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
   });
-};
+}

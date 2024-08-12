@@ -110,12 +110,19 @@
 }
 
 @media (max-width: 1080px) {
+  .reports__body {
+    gap: 16px;
+  }
+
   .reports__slider {
     gap: 16px;
     flex-direction: column;
   }
 
   .reports__card {
+    min-width: unset;
+    max-width: unset;
+    min-height: 175px;
     gap: 12px;
   }
 

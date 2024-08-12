@@ -99,11 +99,23 @@
 }
 
 @media (max-width: 1080px) {
+  .doctors {
+    padding: 30px 15px;
+  }
+
   .doctors__body {
     gap: 30px;
   }
 
   .doctors__list {
     gap: 16px;
+  }
+
+  .doctors__card {
+    min-height: 355px;
+  }
+
+  .doctors__card-image {
+    height: 225px;
   }
 }

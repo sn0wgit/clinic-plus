@@ -141,11 +141,11 @@
   }
 
   .steps__content::after {
-    width: 305px;
+    width: 100%;
     height: 290px;
     position: static;
     border-radius: 32px 0px 0px 0px;
-    background: 
+    background:
     url("../../src/imgs/steps/steps--1.webp") center / cover no-repeat;
   }
 
@@ -153,5 +153,11 @@
     max-width: unset;
     gap: 16px;
     justify-content: center;
+  }
+
+  .steps__card {
+    width: 160px;
+    max-width: unset;
+    min-width: unset;
   }
 }
