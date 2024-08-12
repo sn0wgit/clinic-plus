@@ -221,6 +221,10 @@
     flex-wrap: wrap;
   }
 
+  .footer__column {
+    padding: 0px 12px;
+  }
+
   .footer__socials-list {
     gap: 15px;
   }
@@ -230,18 +234,6 @@
   }
 
   .footer__map {
-    padding: unset;
-  }
-
-  .footer__links-title {
-    padding: unset;
-  }
-
-  .footer__dropdown-button {
-    padding: 8px 0px;
-  }
-
-  .footer__link {
-    padding: 8px 0px;
+    padding: 0px 12px;
   }
 }
