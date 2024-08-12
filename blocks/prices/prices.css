@@ -72,3 +72,14 @@
   text-wrap: nowrap;
   min-width: fit-content;
 }
+
+@media (max-width: 1080px) {
+  .prices__list-link {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .prices__list-link-decor::after {
+    display: none;
+  }
+}

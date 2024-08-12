@@ -102,3 +102,17 @@
   display: inline-block;
   background-color: #1EBB92;
 }
+
+@media (max-width: 1080px) {
+  .about__body {
+    flex-direction: column;
+  }
+
+  .about__user {
+    padding: 0px 30px;
+  }
+
+  .about__user-image {
+    border-radius: 50% 50% 50% 0%;
+  }
+}

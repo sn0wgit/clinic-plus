@@ -52,7 +52,7 @@
   width: 100%;
   display: flex;
   gap: 50px;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .steps__content::after {
@@ -119,6 +119,10 @@
 }
 
 @media (max-width: 1180px) {
+  .steps {
+    padding: var(--padding);
+  }
+
   .steps::after {
     display: none;
   }
@@ -127,11 +131,27 @@
     display: none;
   }
 
+  .steps__body {
+    gap: 16px;
+  }
+
+  .steps__content {
+    gap: 16px;
+    justify-content: center;
+  }
+
   .steps__content::after {
+    width: 305px;
+    height: 290px;
     position: static;
+    border-radius: 32px 0px 0px 0px;
+    background: 
+    url("../../src/imgs/steps/steps--1.webp") center / cover no-repeat;
   }
 
   .steps__list {
     max-width: unset;
+    gap: 16px;
+    justify-content: center;
   }
 }

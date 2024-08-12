@@ -211,3 +211,13 @@
 .footer__link:active {
   scale: var(--scale);
 }
+
+@media (max-width: 1080px) {
+  .footer__body {
+    flex-wrap: wrap;
+  }
+
+  .footer__row {
+    flex-wrap: wrap;
+  }
+}

@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .reports__slider-wrapper {
@@ -90,16 +91,61 @@
   font: normal 600 1.125rem "Montserrat-SemiBold";
 }
 
-.reports__slider-button:nth-child(2) {
+.reports__slider-menu-item:last-child .reports__slider-button {
   justify-content: start;
 }
 
+.reports__slider-button.swiper-button-disabled {
+  opacity: 0.3;
+}
+
 @media (hover:hover) {
-  .reports__slider-button:hover {
+  .reports__slider-button:not(.reports__slider-button.swiper-button-disabled):hover {
     opacity: var(--opacity);
   }
 }
 
-.reports__slider-button:active {
+.reports__slider-button:not(.reports__slider-button.swiper-button-disabled):active {
   scale: var(--scale);
+}
+
+@media (max-width: 1080px) {
+  .reports__slider {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .reports__card {
+    gap: 12px;
+  }
+
+  .reports__card-header {
+    padding-block-end: 12px;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+  }
+
+  .reports__card-text {
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+  .reports__slider-menu {
+    position: static;
+  }
+
+  .reports__slider-menu-item {
+    width: 100%;
+  }
+
+  .reports__slider-button {
+    width: 100%;
+    padding: 15px;
+    min-height: 35px;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .reports__slider-menu-item:last-child .reports__slider-button {
+    justify-content: center;
+  }
 }

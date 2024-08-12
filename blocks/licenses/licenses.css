@@ -34,3 +34,18 @@
   border: 12px solid white;
   box-shadow: 0px 4px 24px 0px rgb(27 49 95 / 15%);
 }
+
+@media (max-width: 1080px) {
+  .licenses__body {
+    gap: 25px;
+  }
+
+  .licenses__list {
+    gap: 16px;
+  }
+
+  .licenses__card {
+    width: 300px;
+    min-height: 400px;
+  }
+}

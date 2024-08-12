@@ -97,3 +97,13 @@
     background-color: rgb(0 0 0 / 50%);
   }
 }
+
+@media (max-width: 1080px) {
+  .doctors__body {
+    gap: 30px;
+  }
+
+  .doctors__list {
+    gap: 16px;
+  }
+}
