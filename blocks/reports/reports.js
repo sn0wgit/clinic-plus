@@ -7,10 +7,22 @@ export const reports = () => {
       prevEl: ".reports__slider-button.prev",
     },
     breakpoints: {
-      1080: {
-        slidesPerView: 1,
-        spaceBetween: 10
+      320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+      },
+      480: {
+          slidesPerView: 1,
+          spaceBetween: 0
+      },
+      768: {
+          slidesPerView: 1,
+          spaceBetween: 0
+      },
+      1024: {
+          slidesPerView: 2,
+          spaceBetween: 5
       }
-    }
+    },
   });
 }

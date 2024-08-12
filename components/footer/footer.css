@@ -213,11 +213,35 @@
 }
 
 @media (max-width: 1080px) {
+  .footer {
+    padding: var(--padding);
+  }
+
   .footer__body {
     flex-wrap: wrap;
   }
 
+  .footer__socials-list {
+    gap: 15px;
+  }
+
   .footer__row {
     flex-wrap: wrap;
+  }
+
+  .footer__map {
+    padding: unset;
+  }
+
+  .footer__links-title {
+    padding: unset;
+  }
+
+  .footer__dropdown-button {
+    padding: 8px 0px;
+  }
+
+  .footer__link {
+    padding: 8px 0px;
   }
 }

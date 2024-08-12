@@ -119,3 +119,9 @@
     height: 225px;
   }
 }
+
+@media (max-width: 380px) {
+  .doctors__card {
+    min-width: unset;
+  }
+}

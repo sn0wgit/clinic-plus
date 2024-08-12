@@ -74,8 +74,17 @@
 }
 
 @media (max-width: 1080px) {
+  .prices {
+    padding: 0px var(--padding);
+  }
+
   .prices__body {
     gap: 16px;
+    padding: 25px 0px;
+  }
+
+  .prices__list {
+    padding: unset;
   }
 
   .prices__list-link {

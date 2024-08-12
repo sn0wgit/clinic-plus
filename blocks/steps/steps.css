@@ -161,3 +161,9 @@
     min-width: unset;
   }
 }
+
+@media (max-width: 370px) {
+  .steps__content::after {
+    display: none;
+  }
+}

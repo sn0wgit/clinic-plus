@@ -35,6 +35,7 @@
 
 .reports__card {
   color: white;
+  position: relative;
   padding: 25px;
   min-height: 280px;
   display: flex;
@@ -42,6 +43,17 @@
   flex-direction: column;
   border-radius: 4px;
   background-color: #162D5F;
+}
+
+.reports__card::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 16px;
+  right: 40px;
+  display: inline-block;
+  background: url("../../src/imgs/reports/reports__icon.svg") center / cover no-repeat;
 }
 
 .reports__card-header {
@@ -120,10 +132,17 @@
   }
 
   .reports__card {
+    width: 100%;
     min-width: unset;
     max-width: unset;
     min-height: 175px;
     gap: 12px;
+  }
+
+  .reports__card::after {
+    width: 100px;
+    height: 100px;
+    right: 10px;
   }
 
   .reports__card-header {
