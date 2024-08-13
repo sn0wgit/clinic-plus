@@ -1,9 +1,6 @@
 import { header } from "../components/header/header.js"
 header();
 
-import { dropdown } from "../components/dropdown/dropdown.js"
-dropdown();
-
 import { reports } from "../blocks/reports/reports.js"
 reports();
 

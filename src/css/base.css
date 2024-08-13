@@ -3,7 +3,6 @@
 /* components */ 
 
 @import url("../../components/header/header.css");
-@import url("../../components/dropdown/dropdown.css");
 @import url("../../components/button/button.css");
 @import url("../../components/breadcrumbs/breadcrumbs.css");
 @import url("../../components/title/title.css");
@@ -20,6 +19,7 @@
 @import url("../../blocks/about/about.css");
 @import url("../../blocks/doctors/doctors.css");
 @import url("../../blocks/reports/reports.css");
+@import url("../../blocks/contacts/contacts.css");
 
 /* blocks */ 
 
@@ -37,7 +37,7 @@
 /* fonts */ 
 
 :root {
-  --padding: 15px;
+  --padding: 16px;
   --scale: 0.9;
   --opacity: 0.5;
   --mainBorderColor: #D7E2FF;

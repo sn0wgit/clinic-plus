@@ -151,7 +151,6 @@
 }
 
 .footer__row {
-  width: 100%;
   display: flex;
   gap: 25px;
 }
@@ -234,6 +233,6 @@
   }
 
   .footer__map {
-    padding: 0px 12px;
+    display: none;
   }
 }
