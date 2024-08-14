@@ -232,6 +232,12 @@
   justify-content: center;
 }
 
+.services__popup-desc {
+  max-width: 700px;
+  line-height: 150%;
+  font-size: 1.125rem;
+}
+
 @media (max-width: 992px) {
   .services__body {
     flex-direction: column;
