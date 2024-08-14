@@ -113,7 +113,7 @@
   display: flex;
   width: 100%;
   max-width: 800px;
-  min-height: 600px;
+  min-height: 500px;
   position: relative;
   flex-direction: column;
   justify-content: flex-end;
@@ -124,10 +124,10 @@
   position: absolute;
   width: 1px;
   height: 893px;
-  top: 91px;
-  left: 0;
-  background: #B6D1FF;
+  top: 50px;
+  left: 0px;
   z-index: -1;
+  background-color: #B6D1FF;
 }
 
 .contacts__map::after {
@@ -136,8 +136,8 @@
   width: 320px;
   height: 360px;
   bottom: -120px;
-  left: -200px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.2' viewBox='0 0 320 360' width='320' height='360'%3E%3Cpath d='m150 0v1h-150v-1z' fill='%23b6d1ff'/%3E%3Cpath d='m200 360l-120-120v-240h120z' fill='%23152f60'/%3E%3Cpath d='m320 360v-120h-120v120z' fill='%23b6d1ff'/%3E%3C/svg%3E") center / cover no-repeat;
+  left: -210px;
+  background: url("../../src/imgs/decor/figure.svg") center / cover no-repeat;
 }
 
 .contacts__map-iframe {
