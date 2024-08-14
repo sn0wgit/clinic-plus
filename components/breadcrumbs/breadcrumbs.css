@@ -34,7 +34,7 @@
   height: 2px;
   border-radius: 10px;
   display: inline-block;
-  background-color: #2770F1;
+  background-color: #163063;
 }
 
 .breadcrumbs__list-item:last-child::after {
@@ -42,7 +42,7 @@
 }
 
 .breadcrumbs__link {
-  color: white;
+  color: #2770F1;
   display: flex;
   align-items: center;
   text-decoration: underline;

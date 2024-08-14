@@ -1,0 +1,187 @@
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px var(--padding);
+}
+
+.services__body {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  border-left: 1px solid var(--mainBorderColor);
+  border-right: 1px solid var(--mainBorderColor);
+}
+
+.services__content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.services__header {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.services__breadcrumbs {
+  padding: 0px 20px;
+}
+
+.services__filter {
+  width: 100%;
+  max-width: 600px;
+  border: unset;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.services__filter-title {
+  width: 100%;
+  color: #1B315F;
+  margin: 0px 0px 16px 0px;
+  padding: 16px;
+  border-bottom: 1px solid var(--mainBorderColor);
+  font: normal 800 1.375rem "Montserrat-ExtraBold";
+}
+
+.services__filter-label {
+  width: fit-content;
+  color: #1B315F;
+  padding: 0px 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (hover:hover) {
+  .services__filter-label:hover {
+    cursor: pointer;
+    opacity: var(--opacity);
+  }
+}
+
+.services__filter-label:active {
+  scale: var(--scale);
+}
+
+.services__filter-checkbox {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #D7E2FF;
+}
+
+.services__filter-checkbox:checked {
+  color: #2770F1;
+  background-color: #2770F1;
+}
+
+.services__slider {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0px 20px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.services__slide-menu {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services__slider-menu-button {
+  color: #2770F1;
+  padding: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Montserrat-SemiBold";
+}
+
+@media (hover:hover) {
+  .services__slider-menu-button:hover {
+    opacity: var(--opacity);
+  }
+}
+
+.services__slider-menu-button:active {
+  scale: var(--scale);
+}
+
+.services__slider-counter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+.services__slider-counter.current {
+  font: normal 800 clamp(1.375rem, 5vw, 2rem) "Montserrat-ExtraBold";
+}
+
+.services__slider-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.services__slider-wrapper .swiper-slide {
+  height: fit-content;
+}
+
+.services__list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.services__card {
+  padding: 16px;
+  color: #1B315F;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #F1F5FF;
+  font: normal bold clamp(1rem, 5vw, 1.125rem) "Montserrat-Bold";
+}
+
+.services__card::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #2770F1;
+}
+
+@media (max-width: 992px) {
+  .services__body {
+    flex-direction: column;
+  }
+
+  .services__content {
+    width: 100%;
+  }
+
+  .services__filter {
+    max-width: unset;
+  }
+}
