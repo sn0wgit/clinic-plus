@@ -1,0 +1,131 @@
+.user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px var(--padding);
+}
+
+.user__body {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  border-left: 1px solid var(--mainBorderColor);
+  border-right: 1px solid var(--mainBorderColor);
+}
+
+.user__header {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.user__breadcrumbs {
+  padding: 0px 20px;
+}
+
+.user__footer {
+  width: 100%;
+  display: flex;
+}
+
+.user__info {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.user__info-image {
+  width: 100%;
+  max-width: 600px;
+  height: 730px;
+  border-radius: 6px;
+}
+
+.user__info-content {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.user__info-header {
+  width: 100%;
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--mainBorderColor);
+}
+
+.user__info-title {
+  color: #1B315F;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font: normal 800 clamp(1.125rem, 5vw, 2rem) "Montserrat-ExtraBold";
+}
+
+.user__info-title::before {
+  content: "!";
+  width: 55px;
+  height: 55px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% 50% 50% 0%;
+  background-color: #2770F1;
+}
+
+.user__info-main {
+  display: flex;
+  gap: 30px;
+}
+
+.user__info-data {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.user__info-data-title {
+  color: #1B315F;
+  font: normal bold clamp(1.125rem, 5vw, 1.25rem) "Montserrat-Bold";
+}
+
+.user__info-data-desc {
+  font-size: 1.125rem;
+}
+
+.user__info-footer {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.user__info-desc {
+  padding: 25px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  line-height: 150%;
+  background-color: white;
+  box-shadow: 0px 4px 24px 0px rgb(27 49 95 / 15%);
+}
+
+.user__info-desc-title {
+  color: #1B315F;
+  font: normal 800 1.375rem "Montserrat-ExtraBold";
+}
+
+.user__licenses {
+}
+
+.user__licenses-list {
+}
+
+.user__licenses-card {
+}

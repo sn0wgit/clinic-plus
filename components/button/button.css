@@ -1,6 +1,7 @@
 .button {
   padding: 16px;
   min-height: 55px;
+  text-align: center;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
