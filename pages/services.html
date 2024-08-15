@@ -71,7 +71,7 @@
          <a class="header__link" href="services.html">Госпитолизация</a>
         </li>
         <li>
-         <span class="header__link active">Контакты</span>
+         <a class="header__link" href="contacts.html">Контакты</a>
         </li>
        </ul>
       </nav>
@@ -181,9 +181,25 @@
       </div>
      </div>
      <div class="footer__row">
-      <div class="footer__map">
-       <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6059f0d3f9f84816c2a308a90d0e38448dc977a0d4dcabcaaa045da77dc202c&amp;source=constructor" frameborder="0"></iframe>
-      </div>
+      <div class="feadback">
+        <div class="feadback__body">
+         <h1 class="feadback__title">Получите консультацию специалиста бесплатно</h1>
+         <span class="feadback__desc">Не нашли категорию или остались вопросы? Оставьте заявку и мы поможем вам</span>
+         <form class="feadback__form">
+          <div class="feadback__form-input-container">
+           <i class="fa-regular fa-user"></i>
+           <input class="feadback__form-input" type="text" placeholder="Ваше имя" id="from_name" name="from_name" required>
+          </div>
+          <div class="feadback__form-input-container">
+           <i class="fa-solid fa-mobile-screen-button"></i>
+           <input class="feadback__form-input" type="tel" inputmode="tel" maxlength="11" id="reply_to" name="reply_to"  placeholder="Телефон" required>
+          </div>
+          <button class="feadback__form-button" type="submit">
+           <span>Оставить заявку</span>
+          </button>
+         </form>
+        </div>
+       </div>
       <div class="footer__links">
         <h5 class="footer__links-title">Полезные ссылки</h5>
         <div class="footer__dropdowns">
@@ -194,6 +210,7 @@
     </div>
    </footer>
   </div>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="../src/libraries/swiper/swiper-bundle.min.js"></script>
   <script src="../src/libraries/simplebar/jquery-3.7.1.min.js"></script>
   <script src="../src/libraries/simplebar/simplebar.min.js"></script>
