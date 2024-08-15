@@ -102,9 +102,9 @@
 }
 
 .services__list {
-  display: flex;
+  display: grid;
   gap: 10px;
-  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .services__card {
@@ -148,6 +148,7 @@
 .services__popup {
   width: 100%;
   height: 100%;
+  padding: var(--padding);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -236,6 +237,8 @@
   max-width: 700px;
   line-height: 150%;
   font-size: 1.125rem;
+  text-align: center;
+  word-break: break-all;
 }
 
 @media (max-width: 992px) {
@@ -249,5 +252,12 @@
 
   .services__filter {
     max-width: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__list {
+    display: flex;
+    flex-direction: column;
   }
 }
