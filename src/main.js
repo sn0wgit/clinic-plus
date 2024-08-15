@@ -7,6 +7,9 @@ reports();
 import { services } from "../blocks/services/services.js"
 services();
 
+import { feedback } from "../blocks/feedback/feedback.js"
+feedback();
+
 import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();
 
