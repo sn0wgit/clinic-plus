@@ -170,3 +170,18 @@
   text-align: center;
   font-size: clamp(1.125rem, 5vw, 2rem);
 }
+
+@media (max-width: 860px) {
+  .feadback__form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .feadback__form-input-container {
+    width: 100%;
+  }
+  
+  .feadback__form-button {
+    width: 100%;
+  }
+}
