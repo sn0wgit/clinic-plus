@@ -104,6 +104,7 @@
 .services__list {
   display: grid;
   gap: 10px;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -113,8 +114,8 @@
   color: #1B315F;
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
   align-items: center;
+  text-align: left;
   border-radius: 4px;
   background-color: #F1F5FF;
   font: normal bold clamp(1rem, 5vw, 1.125rem) "Montserrat-Bold";
@@ -122,6 +123,7 @@
 
 @media (hover:hover) {
   .services__card:hover {
+    cursor: pointer;
     background-color: #2770F1;
   }
 }
@@ -161,32 +163,28 @@
 
 .services__popup-body {
   width: 100%;
-  max-width: 600px;
-  min-height: 300px;
-  padding: var(--padding);
+  max-width: 800px;
+  padding: 30px;
   display: flex;
   gap: 20px;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
+  overflow: auto;
+  background-color: #E0F2FF;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px rgba(94, 94, 94, 0.08);
 }
 
-.services__popup-header {
-  width: 100%;
+.services__popup-body .simplebar-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.services__popup-title {
-  font-size: clamp(1.125rem, 5vw, 1.5rem);
+  gap: 30px;
+  flex-direction: column;
 }
 
 .services__popup-close-button {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 @media (hover:hover) {
@@ -196,7 +194,7 @@
 }
 
 .services__popup-close-button:active {
-  scale: var(--scale);
+  opacity: 0.3;
 }
 
 .services__popup-close-button-icon {
@@ -226,19 +224,177 @@
   left: -1px;
 }
 
-.services__popup-footer {
+.services__popup-tariffs {
   width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.services__popup-tariffs-title {
+  color: #8498A1;
+  text-transform: uppercase;
+  font: normal 800 0.875rem "Montserrat-ExtraBold";
+}
+
+.services__popup-tariffs-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.services__popup-tariffs-button {
+  color: #2196F3;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: 1px solid #2196F3;
+  transition: 0.2s ease-out;
+}
+
+@media (hover:hover) {
+  .services__popup-tariffs-button:not(.services__popup-tariffs-button.active):hover {
+    color: white;
+    background-color: #2196F3;
+  }
+}
+
+.services__popup-tariffs-button:not(.services__popup-tariffs-button.active):active {
+  scale: var(--scale);
+}
+
+.services__popup-tariffs-button.active {
+  color: white;
+  cursor: default;
+  background-color: #2196F3;
+}
+
+.services__popup-content {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 2px solid white;
+}
+
+.services__popup-image {
+  width: 175px;
+  height: 285px;
+  object-fit: cover;
+}
+
+.services__popup-content-block {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.services__popup-title {
+  color: #2F88E0;
+  font: normal bold 1.625rem/120% "Montserrat-Bold";
+}
+
+.services__popup-price {
+  color: #8498A1;
+  font-size: 1.125rem;
+}
+
+.services__popup-price-number {
+  color: #204066;
+  font: normal bold 1.625rem "Montserrat-Bold";
+}
+
+.services__popup-button {
+  color: white;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #52B53D;
+  box-shadow: 0px 5px 10px rgba(94, 94, 94, 0.09);
 }
 
-.services__popup-desc {
-  max-width: 700px;
-  line-height: 150%;
-  font-size: 1.125rem;
+@media (hover:hover) {
+  .services__popup-button:hover {
+    background-color: #2F88E0;
+    box-shadow: 0px 10px 20px rgba(47, 72, 88, 0.08);
+  }
+}
+
+.services__popup-button:active {
+  scale: var(--scale);
+}
+
+.services__popup-effects {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.services__popup-effects-top {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.services__popup-effects-title {
+  color: #204066;
+  font-weight: 800;
+  font-family: "Montserrat-ExtraBold";
+  text-transform: uppercase;
+}
+
+.services__popup-effects-desc {
+  color: #8498A1;
+  line-height: 140%;
+}
+
+.services__popup-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.services__popup-list-item {
+  width: 100%;
+}
+
+.services__popup-effect {
+  color: #204066;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  position: relative;
+  font: normal 500 0.875rem/140% "Montserrat-Medium";
+}
+
+.services__popup-effect-image {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.services__popup-effect-content {
+  padding: 6px 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
-  word-break: break-all;
+  font-size: 0.875rem;
+  border-radius: 30px;
+  background-color: white;
+  transform: translateY(-120%);
+}
+
+.services__popup-effect-content.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 992px) {
@@ -252,6 +408,10 @@
 
   .services__filter {
     max-width: unset;
+  }
+
+  .services__popup-content {
+    flex-direction: column;
   }
 }
 

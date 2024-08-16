@@ -52,19 +52,64 @@ export const services = () => {
       };
 
       const openPopup = (service) => {
+        const prevPopup = document.querySelector(".services__popup");
+        if (prevPopup) {
+          prevPopup.remove();
+        }
+
         const popupHTML = `
           <div class="services__popup" style="display: flex;">
-            <div class="services__popup-body">
-              <header class="services__popup-header">
-                <span></span>
-                <h2 class="services__popup-title">${service.name}</h2>
-                <button class="services__popup-close-button" type="button" aria-label="Закрыть описание услуги" aria-expanded="true">
-                  <span class="services__popup-close-button-icon"></span>
-                </button>
-              </header>
-              <footer class="services__popup-footer">
-                <span class="services__popup-desc">${service.desc}</span>
-              </footer>
+            <div class="services__popup-body" data-simplebar>
+              <button class="services__popup-close-button" type="button" aria-label="Закрыть описание услуги" aria-expanded="true">
+                <span class="services__popup-close-button-icon"></span>
+              </button>
+              <div class="services__popup-tariffs">
+                <h6 class="services__popup-tariffs-title">Выберите формулу:</h6>
+                <ul class="services__popup-tariffs-list">
+                  <li>
+                    <button class="services__popup-tariffs-button active" type="button" data-price="${service.price.standard}">
+                      <span>Стандарт</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="services__popup-tariffs-button" type="button" data-price="${service.price['standard+']}">
+                      <span>Стандарт+</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="services__popup-tariffs-button" type="button" data-price="${service.price.maximum}">
+                      <span>Максимальная</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="services__popup-content">
+                <img class="services__popup-image" src="${service.image}" alt="">
+                <div class="services__popup-content-block">
+                  <h2 class="services__popup-title">${service.name}</h2>
+                  <span class="services__popup-price">Цена: <strong class="services__popup-price-number">${service.price.standard} руб.</strong></span>
+                  <a class="services__popup-button" href="contacts.html">Заказать</a>
+                </div>
+              </div>
+              <div class="services__popup-effects">
+                <div class="services__popup-effects-top">
+                  <h6 class="services__popup-effects-title">Эффекты:</h6>
+                  <span class="services__popup-effects-desc">Нажмите на эффект, что бы узнать его состав</span>
+                </div>
+                <ul class="services__popup-list">
+                  ${service.effects.map((effect) => `
+                    <li class="services__popup-list-item">
+                      <div class="services__popup-effect">
+                        <img class="services__popup-effect-image" src="${effect.image}" alt="">
+                        <span>${effect.effect}</span>
+                        <div class="services__popup-effect-content">
+                          <h6 class="services__popup-effect-title">${effect.compound}</h6>
+                        </div>
+                      </div>
+                    </li>
+                  `).join("")}
+                </ul>
+              </div>
             </div>
           </div>
         `;
@@ -83,6 +128,55 @@ export const services = () => {
             closePopup();
           }
         });
+
+        const tariffButtons = popup.querySelectorAll(".services__popup-tariffs-button");
+        tariffButtons.forEach((button) => {
+          button.addEventListener("click", (event) => {
+            if (!event.currentTarget.classList.contains("active")) {
+              tariffButtons.forEach((btn) => btn.classList.remove("active"));
+              event.currentTarget.classList.add("active");
+              const priceElement = popup.querySelector(".services__popup-price-number");
+              const price = event.currentTarget.dataset.price;
+
+              if (price) {
+                priceElement.textContent = `${price} руб.`;
+              } else {
+                console.error("Цена не определена для выбранного тарифа");
+              }
+            }
+          });
+        });
+
+        const effectItems = popup.querySelectorAll(".services__popup-effect");
+        const popupContents = popup.querySelectorAll(".services__popup-effect-content");
+        
+        effectItems.forEach((effectItem) => {
+          effectItem.addEventListener("click", (event) => {
+            const content = effectItem.querySelector(".services__popup-effect-content");
+            if (content.classList.contains("active")) {
+              content.classList.remove("active");
+            } else {
+              popupContents.forEach((item) => {
+                item.classList.remove("active");
+              });
+              content.classList.add("active");
+            }
+            event.stopPropagation();
+          });
+        });
+        
+        popup.addEventListener("click", (event) => {
+          if (!event.target.closest(".services__popup-effect-content")) {
+            popupContents.forEach((item) => {
+              item.classList.remove("active");
+            });
+          }
+        });
+
+        const firstButton = tariffButtons[0];
+        firstButton.classList.add("active");
+        const priceElement = popup.querySelector(".services__popup-price-number");
+        priceElement.textContent = `${firstButton.dataset.price} руб.`;
       };
 
       const closePopup = () => {
