@@ -28,9 +28,9 @@
 }
 
 .doctors__card {
-  position: relative;
-  min-width: 355px;
+  width: 355px;
   min-height: 500px;
+  position: relative;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,7 @@
 .doctors__card-image {
   width: 100%;
   height: 380px;
+  object-fit: cover;
   background-color: antiquewhite;
 }
 
