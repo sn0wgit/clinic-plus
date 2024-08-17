@@ -1,6 +1,9 @@
 import { header } from "../components/header/header.js"
 header();
 
+import { preloader } from "../components/preloader/preloader.js"
+preloader();
+
 import { reports } from "../blocks/reports/reports.js"
 reports();
 
@@ -18,7 +21,7 @@ tippy("[data-tippy-content]");
 document.addEventListener("DOMContentLoaded", function() {
   const domain = window.location.origin;
 
-  function processSrc(element) {
+  const processSrc = element => {
       let src = element.getAttribute("src")?.trim();
 
       if (!src) return;
@@ -37,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
       element.setAttribute("src", src);
   }
 
-  function processBackgroundImage(element) {
+  const processBackgroundImage = element => {
       let backgroundImage = getComputedStyle(element).backgroundImage;
 
       if (!backgroundImage || backgroundImage === 'none') return;
@@ -62,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 
-  function processCssRules(rules) {
+  const processCssRules = rules => {
       for (let rule of rules) {
           if (rule.style && (rule.style.backgroundImage || rule.style.content)) {
               let backgroundImage = rule.style.backgroundImage;
@@ -109,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 
-  function processStylesheets() {
+  const processStylesheets = () => {
       for (let sheet of document.styleSheets) {
           try {
               if (sheet.cssRules) {
@@ -121,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 
-  function processElements(elements) {
+  const processElements = elements => {
       elements.forEach(element => {
           if (element.nodeType === Node.ELEMENT_NODE) {
               if (element.hasAttribute("src")) {
@@ -139,7 +142,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const observer = new MutationObserver(mutations => {
       mutations.forEach(mutation => {
           if (mutation.type === "childList") {
-              // Фильтруем только элементы
               const addedElements = Array.from(mutation.addedNodes).filter(node => node.nodeType === Node.ELEMENT_NODE);
               processElements(addedElements);
           } else if (mutation.type === "attributes") {
