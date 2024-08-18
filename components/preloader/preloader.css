@@ -27,35 +27,35 @@
   justify-content: center;
 }
 
-.pill,
-.pill__main,
-.pill__shadow {
+.preloader__pill,
+.preloader__pill-main,
+.preloader__pill-shadow {
 	position: relative;
 }
 
-.pill {
+.preloader__pill {
 	margin: auto;
 	width: 145px;
 	height: 45px;
 }
 
-.pill__main,
-.pill__main:before,
-.pill__main:after,
-.pill__glare,
-.pill__shadow {
+.preloader__pill-main,
+.preloader__pill-main:before,
+.preloader__pill-main:after,
+.preloader__pill-glare,
+.preloader__pill-shadow {
 	animation: pillLiftSpin 4s ease-in-out infinite;
 }
 
-.pill__main {
+.preloader__pill-main {
 	background-image: linear-gradient(90deg,hsl(var(--hue),90%,97.5%) 50%,hsl(var(--hue),90%,50%) 50%);
 	border-radius: 1em;
 	width: 100%;
 	height: 100%;
 }
 
-.pill__main:before,
-.pill__main:after {
+.preloader__pill-main:before,
+.preloader__pill-main:after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -63,7 +63,7 @@
 	height: 100%;
 }
 
-.pill__main:before {
+.preloader__pill-main:before {
 	animation-name: pillLeft;
 	border-radius: 1em 0 0 1em;
 	box-shadow:
@@ -72,7 +72,7 @@
 		-0.125em -0.75em 0.5em hsl(var(--hue),10%,90%) inset;
 }
 
-.pill__main:after {
+.preloader__pill-main:after {
 	animation-name: pillRight;
 	border-radius: 0 1em 1em 0;
 	box-shadow:
@@ -83,7 +83,7 @@
 	right: 0;
 }
 
-.pill__glare {
+.preloader__pill-glare {
 	animation-name: pillGlare;
 	background-color: hsl(0,0%,100%);
 	box-shadow: 0 0 0.25em 0.2em hsl(0,0%,100%);
@@ -97,7 +97,7 @@
 	z-index: 1;
 }
 
-.pill__shadow {
+.preloader__pill-shadow {
 	animation-name: pillShadowSpin;
 	background-color: hsla(0,0%,0%,0.5);
 	border-radius: 1em;

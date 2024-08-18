@@ -1,12 +1,14 @@
 export const preloader = () => {
+    const rootElement = document.querySelector("html");
+
     const preloaderDiv = document.querySelector(".preloader");
     
     preloaderDiv.style.display = "flex";
-    document.body.style.overflow = "hidden";
+    rootElement.style.overflow = "hidden";
 
     setTimeout(() => {
         preloaderDiv.style.display = "none";
-        document.body.style.overflow = "auto";
+        rootElement.style.overflow = "auto";
     }, 3000);
 };
 

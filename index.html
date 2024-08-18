@@ -9,11 +9,11 @@
  <body data-simplebar>
   <div class="preloader">
    <div class="preloader__body container">
-    <div class="pill">
-      <div class="pill__main">
-       <div class="pill__glare"></div>
-      </div>
-      <div class="pill__shadow"></div>
+    <div class="preloader__pill">
+     <div class="preloader__pill-main">
+      <div class="preloader__pill-glare"></div>
+     </div>
+     <div class="preloader__pill-shadow"></div>
     </div>
    </div>    
   </div>
@@ -99,8 +99,8 @@
         </h1>
        </header>
        <footer class="cta__footer">
-        <a class="cta__button button blue" href="pages/contacts.html">Срочный вызов</a>
-        <a class="cta__button button white" href="pages/contacts.html">Оставить заявку</a>
+        <button class="cta__button button blue" type="button" data-feedback-button>Срочный вызов</a>
+        <button class="cta__button button white" type="button" data-feedback-button>Оставить заявку</a>
        </footer>
       </div>
      </section>
@@ -502,20 +502,20 @@
       </div>
      </div>
      <div class="footer__row">
-      <div class="feadback">
-       <div class="feadback__body">
-        <h1 class="feadback__title">Получите консультацию специалиста бесплатно</h1>
-        <span class="feadback__desc">Не нашли категорию или остались вопросы? Оставьте заявку и мы поможем вам</span>
-        <form class="feadback__form">
-         <label class="feadback__form-input-container">
+      <div class="feedback">
+       <div class="feedback__body">
+        <h6 class="feedback__title">Получите консультацию специалиста бесплатно</h6>
+        <span class="feedback__desc">Не нашли категорию или остались вопросы? Оставьте заявку и мы поможем вам</span>
+        <form class="feedback__form">
+         <label class="feedback__form-input-container">
           <i class="fa-regular fa-user"></i>
-          <input class="feadback__form-input" type="text" placeholder="Ваше имя" id="from_name" name="from_name" required>
+          <input class="feedback__form-input" type="text" placeholder="Ваше имя" id="from_name" name="from_name" required>
          </label>
-         <label class="feadback__form-input-container">
+         <label class="feedback__form-input-container">
           <i class="fa-solid fa-mobile-screen-button"></i>
-          <input class="feadback__form-input" type="tel" inputmode="tel" maxlength="11" id="reply_to" name="reply_to" placeholder="Телефон" required>
+          <input class="feedback__form-input" type="tel" inputmode="tel" maxlength="11" id="reply_to" name="reply_to" placeholder="Телефон" required>
          </label>
-         <button class="feadback__form-button" type="submit">
+         <button class="feedback__form-button" type="submit">
           <span>Оставить заявку</span>
          </button>
         </form>
