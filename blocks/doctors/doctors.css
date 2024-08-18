@@ -1,6 +1,7 @@
 .doctors {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #162D5F;
@@ -11,12 +12,13 @@
   width: 100%;
   display: flex;
   gap: 70px;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
 .doctors__title {
-  max-width: 600px;
+  width: 100%;
 }
 
 .doctors__list {

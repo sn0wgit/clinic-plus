@@ -1,9 +1,6 @@
 import { header } from "../components/header/header.js"
 header();
 
-import { preloader } from "../components/preloader/preloader.js"
-preloader();
-
 import { reports } from "../blocks/reports/reports.js"
 reports();
 

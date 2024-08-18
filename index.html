@@ -7,16 +7,6 @@
    <title>Клиника плюс - главная</title>
  </head>
  <body data-simplebar>
-  <div class="preloader">
-   <div class="preloader__body container">
-    <div class="preloader__pill">
-     <div class="preloader__pill-main">
-      <div class="preloader__pill-glare"></div>
-     </div>
-     <div class="preloader__pill-shadow"></div>
-    </div>
-   </div>    
-  </div>
   <div class="wrapper">
    <div class="wrapper__body">
     <header class="header">
@@ -325,6 +315,25 @@
           </div>
          </li>
        </ul>
+       <div class="feedback">
+        <div class="feedback__body">
+         <h6 class="feedback__title">Получите консультацию специалиста бесплатно</h6>
+         <span class="feedback__desc">Не нашли категорию или остались вопросы? Оставьте заявку и мы поможем вам</span>
+         <form class="feedback__form">
+          <label class="feedback__form-input-container">
+           <i class="fa-regular fa-user"></i>
+           <input class="feedback__form-input" type="text" placeholder="Ваше имя" id="from_name" name="from_name" required>
+          </label>
+          <label class="feedback__form-input-container">
+           <i class="fa-solid fa-mobile-screen-button"></i>
+           <input class="feedback__form-input" type="tel" inputmode="tel" maxlength="11" id="reply_to" name="reply_to" placeholder="Телефон" required>
+          </label>
+          <button class="feedback__form-button" type="submit">
+           <span>Оставить заявку</span>
+          </button>
+         </form>
+        </div>
+       </div>
       </div>
      </section>
      <section class="reports">
@@ -502,24 +511,8 @@
       </div>
      </div>
      <div class="footer__row">
-      <div class="feedback">
-       <div class="feedback__body">
-        <h6 class="feedback__title">Получите консультацию специалиста бесплатно</h6>
-        <span class="feedback__desc">Не нашли категорию или остались вопросы? Оставьте заявку и мы поможем вам</span>
-        <form class="feedback__form">
-         <label class="feedback__form-input-container">
-          <i class="fa-regular fa-user"></i>
-          <input class="feedback__form-input" type="text" placeholder="Ваше имя" id="from_name" name="from_name" required>
-         </label>
-         <label class="feedback__form-input-container">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <input class="feedback__form-input" type="tel" inputmode="tel" maxlength="11" id="reply_to" name="reply_to" placeholder="Телефон" required>
-         </label>
-         <button class="feedback__form-button" type="submit">
-          <span>Оставить заявку</span>
-         </button>
-        </form>
-       </div>
+      <div class="footer__map">
+       <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac0caad2d5e1c8bf8d6076d6029314be669d2d84d199757968d4b7c1a8bd0a342&amp;source=constructor" frameborder="0"></iframe>
       </div>
       <div class="footer__links">
         <h5 class="footer__links-title">Полезные ссылки</h5>

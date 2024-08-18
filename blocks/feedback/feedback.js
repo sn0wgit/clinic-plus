@@ -32,10 +32,8 @@ export const feedback = () => {
         document.body.insertAdjacentHTML("beforeend", feedbackFormModal);
         const closeButton = document.querySelector(".feedback__popup-close-button");
 
-        // Устанавливаем aria-expanded на true при открытии попапа
         closeButton.setAttribute("aria-expanded", "true");
 
-        // Добавляем обработчик события для закрытия попапа по кнопке
         closeButton.addEventListener("click", () => {
             closePopup();
         });
@@ -44,7 +42,6 @@ export const feedback = () => {
     const closePopup = () => {
         const popup = document.querySelector(".feedback__popup");
         if (popup) {
-            // Устанавливаем aria-expanded на false при закрытии попапа
             const closeButton = popup.querySelector(".feedback__popup-close-button");
             closeButton.setAttribute("aria-expanded", "false");
 
@@ -62,7 +59,7 @@ export const feedback = () => {
                </button>
               </div>
               <div class="feedback__popup-content">
-               <img src="src/imgs/feedback/succes.gif" alt="Успешная отправка">
+               <span class="feedback__popup-icon"></span>
                <span>Заявка отправлена, ожидайте звонка</span>
               </div>
              </div>
@@ -74,7 +71,6 @@ export const feedback = () => {
         const popup = document.querySelector(".feedback__popup");
         const closeButton = popup.querySelector(".feedback__popup-close-button");
 
-        // Устанавливаем aria-expanded на true при открытии попапа
         closeButton.setAttribute("aria-expanded", "true");
 
         closeButton.addEventListener("click", () => {

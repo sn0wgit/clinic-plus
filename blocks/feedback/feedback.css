@@ -1,13 +1,14 @@
 .feedback {
+  width: 100%;
+  max-width: 900px;
   padding: 30px;
-  color: white;
+  color: #152F60;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border-radius: 4px;
   padding: var(--padding);
-  background-color: #2770F1;
+  background-color: white;
 }
 
 .feedback__body {
@@ -37,6 +38,7 @@
 }
 
 .feedback__form-input-container {
+  color: white;
   padding: 12px;
   min-height: 55px;
   display: flex;
@@ -44,7 +46,7 @@
   align-items: center;
   border-radius: 4px;
   font-size: 1.125rem;
-  background-color: rgb(255 255 255 / 20%);
+  background-color: #152F60;
 }
 
 .feedback__form-input {
@@ -57,7 +59,7 @@
 }
 
 .feedback__form-input::placeholder {
-  color: rgb(255 255 255 / 40%);
+  color: white;
 }
 
 .feedback__form-button {
@@ -114,7 +116,6 @@
 .feedback__popup.form .feedback__popup-body {
   max-width: 1000px;
   border-radius: 6px;
-  background-color: #2770F1;
 }
 
 .feedback__popup-top {
@@ -163,11 +164,6 @@
   background-color: #2770F1;
 }
 
-.feedback__popup.form .feedback__popup-close-button-icon::before,
-.feedback__popup.form .feedback__popup-close-button-icon::after {
-  background-color: white;
-}
-
 .feedback__popup-close-button-icon::before {
   rotate: 45deg;
 }
@@ -189,7 +185,7 @@
 }
 
 .feedback__popup.form .feedback__popup-content {
-  color: white;
+  color: #152F60;
   gap: 30px;
 }
 

@@ -177,18 +177,14 @@
   font: normal bold 1.375rem "Montserrat-Bold";
 }
 
-.footer__dropdowns {
-  color: white;
-  display: flex;
-  flex-direction: column;
+.footer__map {
+  width: 545px;
+  height: 310px;
 }
 
-.footer__dropdown-button {
-  color: white;
-}
-
-.footer__dropdown:hover .footer__dropdown-button {
-  color: #1B315F;
+.footer__map-iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .footer__link {
