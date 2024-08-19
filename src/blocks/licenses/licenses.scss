@@ -1,0 +1,57 @@
+.licenses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $padding $padding 80px;
+
+  &__body {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+  }
+
+  &__title {
+    max-width: 780px;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__card {
+    width: 400px;
+    min-height: 570px;
+    border: 12px solid white;
+    box-shadow: 0px 4px 24px 0px rgba(27, 49, 95, 0.15);
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    &__body {
+      gap: 25px;
+    }
+
+    &__list {
+      gap: 16px;
+    }
+
+    &__card {
+      width: 300px;
+      min-height: 350px;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.doctors {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $primaryColor;
+  padding: 60px $padding;
+
+  &__body {
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    width: 100%;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__card {
+    width: 355px;
+    min-height: 500px;
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    &:has(&-link):active {
+      scale: $scale;
+    }
+
+    &-header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-image {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      background-color: antiquewhite;
+    }
+
+    &-footer {
+      width: 100%;
+      min-height: 115px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    &-info {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    &-title {
+      max-width: 230px;
+      font: normal 800 clamp(1.125rem, 5vw, 1.375rem) "Montserrat-ExtraBold";
+
+      &-mark {
+        font-weight: 400;
+        font-family: "Montserrat-Regular";
+      }
+    }
+
+    &-desc {
+      max-width: 330px;
+      line-height: 150%;
+    }
+
+    &-link {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1080px) {
+    padding: 30px 15px;
+
+    &__body {
+      gap: 30px;
+    }
+
+    &__list {
+      gap: 16px;
+    }
+
+    &__card {
+      min-height: 355px;
+
+      &-image {
+        height: 225px;
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    &__card {
+      min-width: unset;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+$padding: 16px;
+$scale: 0.9;
+$opacity: 0.5;
+$mainBorderColor: #D7E2FF;
+$primaryColor: #1B315F;
+$linkColor: #2770F1;
+$backgroundColor: #F1F5FF;
+$borderColor: #B6D1FF;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: $primaryColor;
+  scroll-behavior: smooth;
+  font-family: "Montserrat-Regular", sans-serif;
+
+  &.--lock {
+    overflow: clip;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.fullscreen {
+  min-height: 100dvh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__body {
+    width: 100%;
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+  }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}

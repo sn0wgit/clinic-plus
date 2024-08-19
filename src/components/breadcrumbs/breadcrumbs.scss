@@ -1,0 +1,59 @@
+.breadcrumbs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      &::after {
+        content: "";
+        width: 6px;
+        height: 2px;
+        border-radius: 10px;
+        display: inline-block;
+        background-color: $primaryColor;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: $linkColor;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $linkColor;
+      }
+    }
+
+    &:active {
+      scale: $scale;
+    }
+  }
+}

@@ -1,0 +1,215 @@
+.user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $padding;
+
+  &__body {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+  }
+
+  &__header {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  &__breadcrumbs {
+    padding: 0 20px;
+  }
+
+  &__footer {
+    width: 100%;
+    display: flex;
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    &-image {
+      width: 100%;
+      max-width: 600px;
+      height: fit-content;
+      aspect-ratio: 1 / 1;
+      border-radius: 6px;
+      background: url("../../src/imgs/user/user.webp") top center / 190% no-repeat;
+      position: relative;
+
+      @media (max-width: 1199px) {
+        margin: auto;
+      }
+
+      @media (min-width: 1200px) {
+        margin-bottom: 120px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 40%;
+          height: 60%;
+          bottom: -20%;
+          left: 0;
+          background: url("../../src/imgs/decor/figure.svg") center right / cover no-repeat;
+        }
+
+        &::after {
+          content: "";
+          width: calc(1250% / 59);
+          height: 54%;
+          object-fit: cover;
+          position: absolute;
+          left: 44%;
+          top: 76%;
+          z-index: -1;
+          display: inline-block;
+          background: url("../../src/imgs/decor/decor.svg") top left / contain repeat;
+        }
+      }
+    }
+  }
+
+  &__info-content {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  &__info-header {
+    width: 100%;
+    padding: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__info-title {
+    color: $primaryColor;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font: normal 800 clamp(1.125rem, 5vw, 2rem) "Montserrat-ExtraBold";
+
+    &::before {
+      content: "!";
+      width: 55px;
+      height: 55px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $linkColor;
+    }
+  }
+
+  &__info-main {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+
+  &__info-data {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  &__info-data-title {
+    color: $primaryColor;
+    font: normal bold clamp(1.125rem, 5vw, 1.25rem) "Montserrat-Bold";
+  }
+
+  &__info-data-desc {
+    font-size: 1.125rem;
+  }
+
+  &__info-footer {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  &__info-button {
+    width: fit-content;
+  }
+
+  &__info-desc {
+    padding: 25px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    line-height: 150%;
+    background-color: white;
+    box-shadow: 0px 4px 24px 0px rgba(27, 49, 95, 0.15);
+  }
+
+  &__info-desc-title {
+    color: $primaryColor;
+    font: normal 800 1.375rem "Montserrat-ExtraBold";
+  }
+
+  &__licenses {
+    width: 100%;
+    height: 300px;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-list {
+      display: flex;
+      gap: 32px;
+      flex-flow: row nowrap;
+      width: calc(100% - 160px);
+      z-index: 1;
+      filter: drop-shadow(0 4px 12px rgba(27, 49, 95, 0.15));
+
+      .simplebar-content {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+      }
+    }
+
+    &-card {
+      width: 213px;
+      height: 300px;
+      border: 12px solid white;
+      background-color: white;
+    }
+  }
+
+  @media (max-width: 1220px) {
+    &__info {
+      flex-direction: column;
+    }
+
+    &__info-header {
+      padding: 20px;
+    }
+
+    &__info-main {
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__info-footer {
+      padding: 0 20px;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px $padding;
+
+  &__body {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+  }
+
+  &__user {
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-image {
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &-info {
+      color: $primaryColor;
+      text-align: center;
+      font: normal 800 clamp(1.125rem, 5vw, 1.375rem) / 145% "Montserrat-ExtraBold";
+
+      &-mark {
+        font-weight: 400;
+        font-family: "Montserrat-Regular";
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    &-title {
+      max-width: 1230px;
+    }
+
+    &__text {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      line-height: 150%;
+    }
+
+    &__content-title {
+      color: $primaryColor;
+      font: normal 800 clamp(1.375rem, 5vw, 2rem) "Montserrat-ExtraBold";
+    }
+
+    &__text-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list-container {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      &-title {
+        color: $primaryColor;
+        font: normal 600 1rem "Montserrat-SemiBold";
+      }
+    }
+
+    &__list {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      &-item {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          display: inline-block;
+          background-color: $linkColor;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1080px) {
+    &__body {
+      flex-direction: column;
+    }
+
+    &__user {
+      padding: 0 30px;
+
+      &-image {
+        border-radius: 50% 50% 50% 0%;
+      }
+    }
+  }
+}

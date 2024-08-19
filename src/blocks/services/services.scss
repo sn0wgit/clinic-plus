@@ -1,0 +1,419 @@
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $padding;
+
+  &__body {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+  }
+
+  &__content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  &__breadcrumbs {
+    padding: 0 20px;
+  }
+
+  &__filter {
+    width: 100%;
+    max-width: 600px;
+    border: unset;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  &__filter-title {
+    width: 100%;
+    color: $primaryColor;
+    margin: 0 0 16px 0;
+    padding: 16px;
+    border-bottom: 1px solid $borderColor;
+    font: normal 800 1.375rem "Montserrat-ExtraBold";
+  }
+
+  &__filter-label {
+    width: fit-content;
+    color: $primaryColor;
+    padding: 0 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        opacity: $opacity;
+      }
+    }
+
+    &:active {
+      scale: $scale;
+    }
+  }
+
+  &__filter-checkbox {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $decorColor;
+  }
+
+  &__filter-checkbox:checked {
+    color: $linkColor;
+    background-color: $linkColor;
+  }
+
+  &__slider {
+    width: 100%;
+    max-width: 1110px;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  &__slider-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__list-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__card {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    color: $primaryColor;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: left;
+    border-radius: 4px;
+    background-color: $backgroundColor;
+    font: normal bold clamp(1rem, 5vw, 1.125rem) "Montserrat-Bold";
+
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        background-color: $linkColor;
+      }
+    }
+
+    &:active {
+      scale: $scale;
+    }
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: $primaryColor;
+    }
+  }
+
+  &__popup {
+    width: 100%;
+    height: 100%;
+    padding: $padding;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__popup-body {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    overflow: auto;
+    background-color: #E0F2FF;
+    border-radius: 10px;
+    box-shadow: 0px 15px 15px rgba(94, 94, 94, 0.08);
+  }
+
+  &__popup-close-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: $opacity;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__popup-close-button-icon {
+    width: 40px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 2px;
+      height: 100%;
+      position: relative;
+      display: inline-block;
+      background-color: $linkColor;
+    }
+
+    &::before {
+      rotate: 45deg;
+    }
+
+    &::after {
+      rotate: -45deg;
+      left: -1px;
+    }
+  }
+
+  &__popup-tariffs {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  &__popup-tariffs-title {
+    color: #8498A1;
+    text-transform: uppercase;
+    font: normal 800 0.875rem "Montserrat-ExtraBold";
+  }
+
+  &__popup-tariffs-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__popup-tariffs-button {
+    color: $linkColor;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid $linkColor;
+    transition: 0.2s ease-out;
+
+    @media (hover: hover) {
+      &:not(.active):hover {
+        color: white;
+        background-color: $linkColor;
+      }
+    }
+
+    &:not(.active):active {
+      scale: $scale;
+    }
+
+    &.active {
+      color: white;
+      cursor: default;
+      background-color: $linkColor;
+    }
+  }
+
+  &__popup-content {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid white;
+  }
+
+  &__popup-image {
+    width: 175px;
+    height: 285px;
+    object-fit: cover;
+  }
+
+  &__popup-content-block {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &__popup-title {
+    color: #2F88E0;
+    font: normal bold 1.625rem / 120% "Montserrat-Bold";
+  }
+
+  &__popup-price {
+    color: #8498A1;
+    font-size: 1.125rem;
+  }
+
+  &__popup-price-number {
+    color: #204066;
+    font: normal bold 1.625rem "Montserrat-Bold";
+  }
+
+  &__popup-button {
+    color: white;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #52B53D;
+    box-shadow: 0px 5px 10px rgba(94, 94, 94, 0.09);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #2F88E0;
+        box-shadow: 0px 10px 20px rgba(47, 72, 88, 0.08);
+      }
+    }
+
+    &:active {
+      scale: $scale;
+    }
+  }
+
+  &__popup-effects {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &__popup-effects-top {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  &__popup-effects-title {
+    color: #204066;
+    font-weight: 800;
+    font-family: "Montserrat-ExtraBold";
+    text-transform: uppercase;
+  }
+
+  &__popup-effects-desc {
+    color: #8498A1;
+    line-height: 140%;
+  }
+
+  &__popup-list {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  &__popup-list-item {
+    width: 100%;
+  }
+
+  &__popup-effect {
+    color: #204066;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    position: relative;
+    font: normal 500 0.875rem / 140% "Montserrat-Medium";
+  }
+
+  &__popup-effect-image {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__popup-effect-content {
+    padding: 6px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    font-size: 0.875rem;
+    border-radius: 30px;
+    background-color: white;
+    transform: translateY(-120%);
+  }
+
+  &__popup-effect-content.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (max-width: 992px) {
+    &__body {
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__filter {
+      max-width: unset;
+    }
+
+    &__popup-content {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

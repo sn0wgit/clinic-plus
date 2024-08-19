@@ -1,21 +1,46 @@
-import { header } from "../components/header/header.js"
+import './scss/modern-normalize.scss';
+import './components/header/header.scss';
+import './components/button/button.scss';
+import './components/breadcrumbs/breadcrumbs.scss';
+import './components/title/title.scss';
+import './components/footer/footer.scss';
+import './blocks/cta/cta.scss';
+import './blocks/prices/prices.scss';
+import './blocks/steps/steps.scss';
+import './blocks/licenses/licenses.scss';
+import './blocks/about/about.scss';
+import './blocks/doctors/doctors.scss';
+import './blocks/reports/reports.scss';
+import './blocks/contacts/contacts.scss';
+import './blocks/services/services.scss';
+import './blocks/user/user.scss';
+import './blocks/feedback/feedback.scss';
+import './scss/fonts.scss';
+
+import { header } from "./components/header/header.js"
 header();
 
-import { reports } from "../blocks/reports/reports.js"
+import { reports } from "./blocks/reports/reports.js"
 reports();
 
-import { services } from "../blocks/services/services.js"
+import { services } from "./blocks/services/services.js"
 services();
 
-import { feedback } from "../blocks/feedback/feedback.js"
+import { feedback } from "./blocks/feedback/feedback.js"
 feedback();
 
 import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();
 
+import "./libraries/emailjs/email.min.js";
+
+import "simplebar";
+import "tippy.js";
+import "swiper";
+
 tippy("[data-tippy-content]");
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
   const domain = window.location.origin;
 
   const processSrc = element => {

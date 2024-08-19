@@ -1,0 +1,38 @@
+.button {
+  padding: $padding;
+  min-height: 55px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font: normal 600 1.125rem "Montserrat-SemiBold";
+
+  &.blue {
+    color: white;
+    background-color: $linkColor;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: darken($linkColor, 15%);
+      }
+    }
+  }
+
+  &.white {
+    color: $linkColor;
+    background-color: $backgroundColor;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: lighten($backgroundColor, 10%);
+      }
+    }
+  }
+
+  &:active {
+    scale: $scale;
+  }
+}

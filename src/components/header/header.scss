@@ -1,0 +1,312 @@
+.header {
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  border-bottom: 1px solid $borderColor;
+
+  &__body {
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+  }
+
+  &__top {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &-row {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: $opacity;
+      }
+    }
+
+    &:active {
+      scale: $scale;
+    }
+
+    &-image {
+      width: 245px;
+      height: 55px;
+      object-fit: cover;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+
+    &-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    &-list {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &-link {
+      width: 48px;
+      height: 48px;
+      color: #11449E;
+      display: flex;
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $backgroundColor;
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: $linkColor;
+        }
+      }
+
+      &:active {
+        scale: $scale;
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-style: normal;
+
+    &-phone {
+      color: $primaryColor;
+      text-align: right;
+      font: normal 800 1.5rem "Montserrat-ExtraBold";
+
+      @media (hover: hover) {
+        &:hover {
+          color: lighten($primaryColor, 10%);
+        }
+      }
+
+      &:active {
+        scale: $scale;
+      }
+    }
+
+    &-text {
+      color: $primaryColor;
+      text-align: right;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: $primaryColor;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    font: normal 500 1.125rem "Montserrat-Medium";
+
+    &.active {
+      text-decoration: underline 3px;
+      text-underline-offset: 10px;
+    }
+
+    @media (hover: hover) {
+      &:not(.active) {
+        &:hover {
+          opacity: $opacity;
+        }
+      }
+    }
+
+    &:not(.active) {
+      &:active {
+        scale: $scale;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    &-button {
+      width: fit-content;
+      display: none;
+      align-items: center;
+      border-radius: 50%;
+
+      &.active {
+        rotate: 10deg;
+        background-color: $linkColor;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: $opacity;
+        }
+      }
+
+      &:active {
+        scale: $scale;
+      }
+
+      &-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+
+        &::before,
+        &::after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          position: relative;
+          border-radius: 50%;
+          display: inline-block;
+          background-color: $linkColor;
+        }
+
+        .active & {
+          &::before,
+          &::after {
+            width: 5px;
+            height: 20px;
+            border-radius: 6px;
+            background-color: white;
+          }
+
+          &::before {
+            left: 12px;
+            rotate: -55deg;
+          }
+
+          &::after {
+            left: -13px;
+            rotate: 37deg;
+          }
+
+          span {
+            scale: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1170px) {
+    padding: 12px;
+    min-height: auto;
+    border-bottom: transparent;
+    box-shadow: 0px 4px 32px 0px rgba(27, 49, 95, 0.1), 0px 4px 72px 0px rgba(27, 49, 95, 0.2);
+
+    &__body {
+      padding: unset;
+      border: unset;
+    }
+
+    &__top-row {
+      gap: 10px;
+    }
+
+    &__logo-image {
+      width: 140px;
+      height: 30px;
+    }
+
+    &__socials {
+      width: 100%;
+      justify-content: center;
+      margin-block-start: 16px;
+    }
+
+    &__menu-button {
+      display: flex;
+    }
+
+    &__bottom {
+      display: none;
+    }
+
+    &__list {
+      gap: unset;
+      margin-block-end: 25px;
+      flex-direction: column;
+    }
+
+    &__menu {
+      width: 100%;
+      height: calc(100% - 64px);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: -200%;
+      left: 0;
+      z-index: 5;
+      overflow: auto;
+      background-color: white;
+
+      &.open {
+        top: 64px;
+      }
+    }
+
+    &__address {
+      width: 100%;
+      gap: 25px;
+      align-items: center;
+      margin-block-start: 25px;
+
+      &-phone {
+        text-align: center;
+      }
+
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}
