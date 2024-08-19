@@ -8,6 +8,8 @@ html(lang="ru-RU")
     .wrapper
       .wrapper__body
         include src/components/header/header.pug
+        - var basePath = "./pages"
+        +header(basePath)
         main.main
           include src/blocks/cta/cta.pug
           include src/blocks/prices/prices.pug
@@ -17,5 +19,7 @@ html(lang="ru-RU")
           include src/blocks/doctors/doctors.pug
           include src/blocks/reports/reports.pug
       include src/components/footer/footer.pug
+      - var basePath = "./pages"
+      +footer(basePath)
     script(src="https://kit.fontawesome.com/214ec3578d.js", crossorigin="anonymous")
     script(type="module", src="src/main.js")

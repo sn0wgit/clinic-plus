@@ -87,9 +87,14 @@ export const feedback = () => {
     };
 
     document.addEventListener("click", event => {
-        if (event.target.matches('[data-feedback-button]')) {
+        // Проверяем, был ли клик на элементе с атрибутом data-feedback-button
+        if (event.target.closest('[data-feedback-button]')) {
             showFeedbackForm();
-        } else if (event.target.closest(".feedback__form")) {
+        }
+    });
+
+    document.addEventListener("click", event => {
+        if (event.target.closest(".feedback__form")) {
             const feedbackForm = event.target.closest(".feedback__form");
 
             feedbackForm.addEventListener("submit", event => {

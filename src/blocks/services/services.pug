@@ -1,0 +1,30 @@
+section.services.fullscreen
+  .services__body.container
+    .services__content
+      header.services__header
+        .services__breadcrumbs.breadcrumbs
+          .breadcrumbs__body
+            nav.breadcrumbs__nav
+              ul.breadcrumbs__list
+                li.breadcrumbs__list-item
+                  a.breadcrumbs__link(href="../index.html") Главная
+                li.breadcrumbs__list-item
+                  a.breadcrumbs__link(href="services.html") Услуги
+        h1.title.decor Услуги
+      fieldset.services__filter
+        legend.services__filter-title Фильтр
+        label.services__filter-label
+          input.services__filter-checkbox(type="radio", name="services-filter", value="all")
+          span Все услуги
+        label.services__filter-label
+          input.services__filter-checkbox(type="radio", name="services-filter", value="hospitalization")
+          span Госпитализация
+        label.services__filter-label
+          input.services__filter-checkbox(type="radio", name="services-filter", value="iv-therapy")
+          span IV-терария
+        label.services__filter-label
+          input.services__filter-checkbox(type="radio", name="services-filter", value="narcologist")
+          span Нарколог
+    .services__slider
+      .services__slider-wrapper
+        ul.services__list

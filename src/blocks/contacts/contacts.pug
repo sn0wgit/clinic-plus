@@ -1,0 +1,32 @@
+section.contacts.fullscreen
+  .contacts__body.container
+    .contacts__content
+      header.contacts__header
+        .contacts__breadcrumbs.breadcrumbs
+          .breadcrumbs__body
+            nav.breadcrumbs__nav
+              ul.breadcrumbs__list
+                li.breadcrumbs__list-item
+                  a.breadcrumbs__link(href="../index.html") Главная
+                li.breadcrumbs__list-item
+                  a.breadcrumbs__link(href="contacts.html") Контакты
+        h1.title.decor Контакты
+      footer.contacts__footer
+        h2.contacts__title г. Богучар, ул. Мжд Киевское 17-й км
+        .contacts__data
+          h6.contacts__data-title Телефон:
+          .contacts__data-content
+            a.contacts__data-phone(href="tel:88001234567") 8 (800) 123-45-67
+            a.contacts__data-phone(href="tel:88001234567") 8 (800) 123-45-67
+        .contacts__data
+          h6.contacts__data-title Email:
+          .contacts__data-content
+            a.contacts__data-link(href="mailto:example@example.ru") example@example.ru
+        a.contacts__button.button.white(href="#!")
+          span Написать на WhatsApp
+        .contacts__rating
+          img(src="../src/imgs/contacts/yandex-rating.svg", alt="")
+          span.contacts__rating-decor
+          img(src="../src/imgs/contacts/google-rating.svg", alt="")
+    .contacts__map
+      iframe.contacts__map-iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6059f0d3f9f84816c2a308a90d0e38448dc977a0d4dcabcaaa045da77dc202c&amp;source=constructor", frameborder="0")
