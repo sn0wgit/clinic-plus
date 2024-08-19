@@ -1,0 +1,42 @@
+header.header
+  .header__body.container
+    .header__top
+      .header__top-row
+        a.header__logo(href="index.html")
+          img.header__logo-image(src="src/imgs/header/header__logo.svg", alt="Клиника плюс")
+        .header__socials(data-da=".header__menu, 1170, 2")
+          nav.header__socials-nav
+            ul.header__socials-list
+              li
+                a.header__socials-link(href="#!", aria-label="Вконтакте", data-tippy-content="Вконтакте")
+                  i.fa-brands.fa-vk
+              li
+                a.header__socials-link(href="#!", aria-label="facebook", data-tippy-content="facebook")
+                  i.fa-brands.fa-facebook-f
+              li
+                a.header__socials-link(href="#!", aria-label="WhatsApp", data-tippy-content="WhatsApp")
+                  i.fa-brands.fa-whatsapp
+              li
+                a.header__socials-link(href="#!", aria-label="telegram", data-tippy-content="telegram")
+                  i.fa-brands.fa-telegram
+      .header__top-row
+        address.header__address(data-da=".header__menu, 1170, 3")
+          a.header__address-phone(href="tel:88001234567") 8 (800) 123-45-67
+          span.header__address-text г. Богучар, ул. Мжд Киевское 17-й км
+        button.header__menu-button(type="button", aria-label="Мобильное меню", aria-expanded="false")
+          span.header__menu-button-icon
+            span
+        button.button.blue(type="button", data-da=".header__menu, 1170, 0")
+          span Срочный вызов врача
+    .header__bottom
+      nav.header__nav(data-da=".header__menu, 1170, 0")
+        ul.header__list
+          li
+            a.header__link(href="pages/services.html") IV-терапия
+          li
+            a.header__link(href="pages/services.html") Нарколог
+          li
+            a.header__link(href="pages/services.html") Госпитализация
+          li
+            a.header__link(href="pages/contacts.html") Контакты
+    .header__menu

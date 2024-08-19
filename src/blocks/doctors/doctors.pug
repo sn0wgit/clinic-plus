@@ -1,0 +1,50 @@
+section.doctors
+  .doctors__body.container
+    h2.doctors__title.title.medium.decor.white Наши доктора
+    ul.doctors__list
+      li
+        .doctors__card
+          header.doctors__card-header
+            img.doctors__card-image(src="src/imgs/doctors/01.webp", alt="")
+          footer.doctors__card-footer
+            .doctors__card-info
+              h5.doctros__card-title
+                | Соболев Даниил
+                span.doctros__card-title-mark Константинович
+              span.doctros__card-desc Заведующий кардиологическим отделением
+          a.doctors__card-link(href="#!")
+      li
+        .doctors__card
+          header.doctors__card-header
+            img.doctors__card-image(src="src/imgs/doctors/02.webp", alt="")
+          footer.doctors__card-footer
+            .doctors__card-info
+              h5.doctros__card-title
+                | Соболев Даниил
+                span.doctros__card-title-mark Константинович
+              span.doctros__card-desc Заведующий кардиологическим отделением
+          a.doctors__card-link(href="#!")
+      li
+        .doctors__card
+          header.doctors__card-header
+            img.doctors__card-image(src="src/imgs/doctors/03.webp", alt="")
+          footer.doctors__card-footer
+            .doctors__card-info
+              h5.doctros__card-title
+                | Соболев Даниил
+                span.doctros__card-title-mark Константинович
+              span.doctros__card-desc Заведующий кардиологическим отделением
+          a.doctors__card-link(href="#!")
+    .feedback
+      .feedback__body
+        h6.feedback__title Получите консультацию специалиста бесплатно
+        span.feedback__desc Не нашли категорию или остались вопросы? Оставьте заявку и мы поможем вам
+        form.feedback__form
+          label.feedback__form-input-container
+            i.fa-regular.fa-user
+            input.feedback__form-input(type="text", placeholder="Ваше имя", id="from_name", name="from_name", required)
+          label.feedback__form-input-container
+            i.fa-solid.fa-mobile-screen-button
+            input.feedback__form-input(type="tel", inputmode="tel", maxlength="11", id="reply_to", name="reply_to", placeholder="Телефон", required)
+          button.feedback__form-button(type="submit")
+            span Оставить заявку
