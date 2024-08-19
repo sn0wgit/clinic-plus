@@ -1,21 +1,4 @@
-import './scss/modern-normalize.scss';
-import './components/header/header.scss';
-import './components/button/button.scss';
-import './components/breadcrumbs/breadcrumbs.scss';
-import './components/title/title.scss';
-import './components/footer/footer.scss';
-import './blocks/cta/cta.scss';
-import './blocks/prices/prices.scss';
-import './blocks/steps/steps.scss';
-import './blocks/licenses/licenses.scss';
-import './blocks/about/about.scss';
-import './blocks/doctors/doctors.scss';
-import './blocks/reports/reports.scss';
-import './blocks/contacts/contacts.scss';
-import './blocks/services/services.scss';
-import './blocks/user/user.scss';
-import './blocks/feedback/feedback.scss';
-import './scss/fonts.scss';
+import "./scss/base.scss";
 
 import { header } from "./components/header/header.js"
 header();

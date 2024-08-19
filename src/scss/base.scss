@@ -1,11 +1,27 @@
-$padding: 16px;
-$scale: 0.9;
-$opacity: 0.5;
-$mainBorderColor: #D7E2FF;
-$primaryColor: #1B315F;
-$linkColor: #2770F1;
-$backgroundColor: #F1F5FF;
-$borderColor: #B6D1FF;
+// base styles
+@use "./vars.scss" as *;
+@use "./fonts.scss" as *;
+@use "./modern-normalize.scss" as *;
+
+// components
+@use "../components/header/header.scss" as *;
+@use "../components/button/button.scss" as *;
+@use "../components/breadcrumbs/breadcrumbs.scss" as *;
+@use "../components/title/title.scss" as *;
+@use "../components/footer/footer.scss" as *;
+
+// blocks
+@use "../blocks/cta/cta.scss" as *;
+@use "../blocks/prices/prices.scss" as *;
+@use "../blocks/steps/steps.scss" as *;
+@use "../blocks/licenses/licenses.scss" as *;
+@use "../blocks/about/about.scss" as *;
+@use "../blocks/doctors/doctors.scss" as *;
+@use "../blocks/reports/reports.scss" as *;
+@use "../blocks/contacts/contacts.scss" as *;
+@use "../blocks/services/services.scss" as *;
+@use "../blocks/user/user.scss" as *;
+@use "../blocks/feedback/feedback.scss" as *;
 
 html,
 body {

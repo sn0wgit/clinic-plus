@@ -1,3 +1,5 @@
+@use "../../scss/vars.scss" as *;
+
 .title {
   color: $primaryColor;
   font: normal 800 clamp(1.75rem, 5vw, 3.5rem) / 115% "Montserrat-ExtraBold";

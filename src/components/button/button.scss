@@ -1,3 +1,5 @@
+@use "../../scss/vars.scss" as *;
+
 .button {
   padding: $padding;
   min-height: 55px;
