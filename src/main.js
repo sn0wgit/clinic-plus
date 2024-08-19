@@ -18,8 +18,12 @@ useDynamicAdapt();
 import "./libraries/emailjs/email.min.js";
 
 import "simplebar";
-import "tippy.js";
-import "swiper";
+import "simplebar/dist/simplebar.css";
+
+import tippy from "tippy.js";
+import "tippy.js/dist/tippy.css";
+
+import "swiper/css";
 
 tippy("[data-tippy-content]");
 

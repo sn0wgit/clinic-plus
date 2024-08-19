@@ -1,3 +1,5 @@
+import Swiper from "swiper";
+
 export const reports = () => {
   if (document.querySelector(".reports__slider")) {
     new Swiper(".reports__slider", {
