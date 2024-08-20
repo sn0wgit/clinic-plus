@@ -1,3 +1,5 @@
+import emailjs from '@emailjs/browser';
+
 export const feedback = () => {
     emailjs.init("swwSiyo7yzThslhjm");
 

@@ -2,7 +2,7 @@ export const data = {
   "hospitalization": [
     {
       name: "Капельница антистресс «Antistress»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -28,7 +28,7 @@ export const data = {
   "iv-therapy": [
     {
       name: "Капельница антистресс «Antistress»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -36,7 +36,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/polyarizuyushhaya-smes.webp",
+          image: "imgs/services/polyarizuyushhaya-smes.webp",
           effect: `
            Регулирует метаболические процессы, устраняет дисбаланс электролитов, 
            снижает возбудимость, восстанавливает проводимость нервно-мышечных тканей
@@ -44,7 +44,7 @@ export const data = {
           compound: "Поляризующая смесь",          
         },
         {
-          image: "src/imgs/services/uspokoitelnaya-terapiya.webp",
+          image: "imgs/services/uspokoitelnaya-terapiya.webp",
           effect: `
            Уменьшает эмоциональное напряжение, ослабляет тревогу, страх
           `,
@@ -54,7 +54,7 @@ export const data = {
     },
     {
       name: "Капельница «Детокс»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -62,7 +62,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/1.svg",
+          image: "imgs/services/1.svg",
           effect: `
            Восстанавливает водно-электролитный баланс организма и обладает
            хорошими дезинтоксикационными свойствами
@@ -70,14 +70,14 @@ export const data = {
           compound: "Физиологический р-р",          
         },
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Витамины оказывают благоприятное воздействие при воспалительных и дегенеративных заболеваниях нервной системы и внутренних органов
           `,
           compound: "Поливитаминный комплекс (В1,В6,В12,С)",
         },
         {
-          image: "src/imgs/services/3.svg",
+          image: "imgs/services/3.svg",
           effect: `
            Снижение холестерина, улучшение работы сосудов
           `,
@@ -87,7 +87,7 @@ export const data = {
     },
     {
       name: "Капельница «Энергия»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 10000,
@@ -95,7 +95,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/polyarizuyushhaya-smes.webp",
+          image: "imgs/services/polyarizuyushhaya-smes.webp",
           effect: `
            Регулирует метаболические процессы, устраняет дисбаланс электролитов, 
            снижает возбудимость, восстанавливает проводимость нервно-мышечных тканей
@@ -103,14 +103,14 @@ export const data = {
           compound: "Поляризующая смесь",          
         },
         {
-          image: "src/imgs/services/4.svg",
+          image: "imgs/services/4.svg",
           effect: `
            Дает энергию и улучшает метаболизм
           `,
           compound: "Глюкоза",
         },
         {
-          image: "src/imgs/services/nootropy.svg",
+          image: "imgs/services/nootropy.svg",
           effect: `
            Оказывает положительное влияние на обменные процессы мозга,
            повышает концентрацию АТФ в мозговой ткани,
@@ -122,7 +122,7 @@ export const data = {
     },
     {
       name: "Капельница «Золушки»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 12000,
         "standard+": 12000,
@@ -130,21 +130,21 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/antioxidant.webp",
+          image: "imgs/services/antioxidant.webp",
           effect: `
            Оказывает положительный эффект на аэробные процессы в клетке
           `,
           compound: "Антиоксидант",          
         },
         {
-          image: "src/imgs/services/terapija-omolozhenija.webp",
+          image: "imgs/services/terapija-omolozhenija.webp",
           effect: `
            Комплекс медицинский процедур направленный на омоложение тела
           `,
           compound: "Терапия омоложения",
         },
         {
-          image: "src/imgs/services/glutathione.webp",
+          image: "imgs/services/glutathione.webp",
           effect: `
            Играет важную роль в защите клеток
            от вредных соединений и повышает устойчивость
@@ -158,7 +158,7 @@ export const data = {
     },
     {
       name: "Капельница «Коктейль Майерса»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 7000,
         "standard+": 7000,
@@ -166,7 +166,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Витамины оказывают благоприятное воздействие при воспалительных
            и дегенеративных заболеваниях нервной системы и внутренних органов
@@ -174,14 +174,14 @@ export const data = {
           compound: "Поливитаминный комплекс (В1,С)",          
         },
         {
-          image: "src/imgs/services/3.svg",
+          image: "imgs/services/3.svg",
           effect: `
            Снижение холестерина, улучшение работы сосудов
           `,
           compound: "Никотиновая к-та",
         },
         {
-          image: "src/imgs/services/calcij-hlorid.webp",
+          image: "imgs/services/calcij-hlorid.webp",
           effect: `
            Играет важную роль в формировании и
            укреплении костей, является эффективным средством для
@@ -191,7 +191,7 @@ export const data = {
           compound: "Кальций хлорид",
         },
         {
-          image: "src/imgs/services/magnij-hlorid.webp",
+          image: "imgs/services/magnij-hlorid.webp",
           effect: `
            Это важный минерал, который участвует в
            многих важных процессах в организме, включая
@@ -201,7 +201,7 @@ export const data = {
           compound: "Магний хлорид",
         },
         {
-          image: "src/imgs/services/czianokobalamin.webp",
+          image: "imgs/services/czianokobalamin.webp",
           effect: `
            Является важным компонентом витаминного комплекса, который
            необходим для обмена веществ, процессах роста
@@ -210,7 +210,7 @@ export const data = {
           compound: "Цианокобаламин (B12)",
         },
         {
-          image: "src/imgs/services/b6.webp",
+          image: "imgs/services/b6.webp",
           effect: `
            Является ключевым питательным веществом, необходимым для поддержания
            здоровья и процессов метаболизма человеческого организма
@@ -221,7 +221,7 @@ export const data = {
     },
     {
       name: "Капельница для улучшения мозговой деятельности «IQ»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -229,7 +229,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Витамины положительно воздействуют при воспалительных и
            дегенеративных патологиях ЦНС и внутренних органов
@@ -237,7 +237,7 @@ export const data = {
           compound: "Витаминный комплекс (В1, В6, В12, С)",          
         },
         {
-          image: "src/imgs/services/nootropy.svg",
+          image: "imgs/services/nootropy.svg",
           effect: `
            Оказывает положительное влияние на обменные процессы
            мозга, повышает концентрацию АТФ в мозговой ткани,
@@ -246,7 +246,7 @@ export const data = {
           compound: "Ноотропная терапия",          
         },
         {
-          image: "src/imgs/services/antioxidant.webp",
+          image: "imgs/services/antioxidant.webp",
           effect: `
            Оказывает антигипоксическое, мембранопротекторное, ноотропное, противосудорожное и
            анксиолитическое действие, повышает устойчивость организма к стрессу
@@ -254,7 +254,7 @@ export const data = {
           compound: "Антиоксидантная терапия",          
         },
         {
-          image: "src/imgs/services/kaviton.webp",
+          image: "imgs/services/kaviton.webp",
           effect: `
            Помогает защитить нейроны мозга в период больших
            умственных нагрузок, когда имеет место их чрезмерное
@@ -263,7 +263,7 @@ export const data = {
           compound: "Кавитон",          
         },
         {
-          image: "src/imgs/services/aktiviruyushhaya-terapiya.webp",
+          image: "imgs/services/aktiviruyushhaya-terapiya.webp",
           effect: `
            Активируется метаболическая энергокоррекция, антигипоксическая и антиоксидантная
            активность в структурах головного мозга
@@ -274,7 +274,7 @@ export const data = {
     },
     {
       name: "Капельница для иммунитета «Imunno»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -282,7 +282,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Витамины способствуют благоприятному воздействию при воспалительных
            и дегенеративных болезнях ЦНС и внутренних органов
@@ -290,7 +290,7 @@ export const data = {
           compound: "Комплекс витамин (В1, В6, В12, С)",          
         },
         {
-          image: "src/imgs/services/imunnomodolyator.webp",
+          image: "imgs/services/imunnomodolyator.webp",
           effect: `
            Характеризуется противовирусным действием, которое повышает устойчивость
            организма к вирусным и бактериальным инфекциям.
@@ -301,7 +301,7 @@ export const data = {
     },
     {
       name: "Капельница для сердца «Cardio»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -309,7 +309,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Регулирует обменные процессы веществ, стабилизирует электролиты,
            улучшает кровоснабжение миокарда, уменьшает возбудимость и
@@ -321,7 +321,7 @@ export const data = {
     },
     {
       name: "Капельница для печени «GepatoPro»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -329,7 +329,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Выводит токсины из печени и восстанавливает клетки изнутри
           `,
@@ -339,7 +339,7 @@ export const data = {
     },
     {
       name: "Капельница для похудения «Slim»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,
@@ -347,7 +347,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Витамины оказывают благоприятное воздействие при воспалительных
            и дегенеративных заболеваниях нервной системы и внутренних органов
@@ -355,7 +355,7 @@ export const data = {
           compound: "Поливитаминный комплекс (В1,В6,В12,С)",          
         },
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Обеспечение организма и его тканей важными микроэлементами
           `,
@@ -365,7 +365,7 @@ export const data = {
     },
     {
       name: "Капельница «Красота и Молодость»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 11000,
@@ -373,7 +373,7 @@ export const data = {
       },
       effects: [
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Витамины оказывают благоприятное воздействие при воспалительных
            и дегенеративных заболеваниях нервной системы и внутренних органов
@@ -381,14 +381,14 @@ export const data = {
           compound: "Витаминный комплекс (В1, В6, В12, С)",          
         },
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Придает энергии и улучшает метаболизм
           `,
           compound: "Глюкоза",          
         },
         {
-          image: "src/imgs/services/2.svg",
+          image: "imgs/services/2.svg",
           effect: `
            Процедуры направленные на омоложение тела
           `,
@@ -398,7 +398,7 @@ export const data = {
     },
     {
       name: "Курс капельниц при отравлении",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 5000,
@@ -416,7 +416,7 @@ export const data = {
     },
     {
       name: "Капельницы от аллергии",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 5000,
@@ -434,7 +434,7 @@ export const data = {
     },
     {
       name: "Капельницы для спортсменов",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 5000,
@@ -452,7 +452,7 @@ export const data = {
     },
     {
       name: "Капельницы с антибиотиками",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 5000,
@@ -470,7 +470,7 @@ export const data = {
     },
     {
       name: "Капельницы при анемии",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 5000,
@@ -488,7 +488,7 @@ export const data = {
     },
     {
       name: "Капельница Джетлаг",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 9000,
         "standard+": 9000,
@@ -506,7 +506,7 @@ export const data = {
     },
     {
       name: "Капельницы с Гептралом",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 5000,
@@ -526,7 +526,7 @@ export const data = {
   "narcologist": [
     {
       name: "Капельница «Детокс»",
-      image: "src/imgs/services/dropper.webp",
+      image: "imgs/services/dropper.webp",
       price: {
         "standard": 5000,
         "standard+": 8000,

@@ -7,12 +7,12 @@ html(lang="ru-RU")
   body(data-simplebar)
     .wrapper
       .wrapper__body
-        include src/components/header/header.pug
+        include ../components/header/header.pug
         - var basePath = "."
         +header(basePath)
         main.main
-          include src/blocks/user/user.pug
-      include src/components/footer/footer.pug
+          include ../blocks/user/user.pug
+      include ../components/footer/footer.pug
       - var basePath = "."
       +footer(basePath)
     script(src="https://kit.fontawesome.com/214ec3578d.js", crossorigin="anonymous")

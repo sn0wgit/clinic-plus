@@ -18,7 +18,7 @@
     left: -40px;
     bottom: 30px;
     display: inline-block;
-    background: url("../../src/imgs/decor/decor.svg") top right / contain repeat;
+    background: url("imgs/decor/decor.svg") top right / contain repeat;
   }
 
   &::after {
@@ -30,7 +30,7 @@
     right: 0;
     top: -70px;
     display: inline-block;
-    background: url("../../src/imgs/decor/decor.svg") top left / contain repeat;
+    background: url("imgs/decor/decor.svg") top left / contain repeat;
   }
 
   &__body {
@@ -63,8 +63,8 @@
       display: inline-block;
       border-radius: 112px 0 0 0;
       background: 
-        url("../../src/imgs/steps/steps__decor.svg") right bottom / 204px no-repeat, 
-        url("../../src/imgs/steps/steps--1.webp") top center / 630px no-repeat;
+        url("imgs/steps/steps__decor.svg") right bottom / 204px no-repeat, 
+        url("imgs/steps/steps--1.webp") top center / 630px no-repeat;
     }
   }
 
@@ -140,7 +140,7 @@
         height: 290px;
         position: static;
         border-radius: 32px 0 0 0;
-        background: url("../../src/imgs/steps/steps--1.webp") center / cover no-repeat;
+        background: url("imgs/steps/steps--1.webp") center / cover no-repeat;
       }
     }
 

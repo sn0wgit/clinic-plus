@@ -44,7 +44,7 @@
       height: fit-content;
       aspect-ratio: 1 / 1;
       border-radius: 6px;
-      background: url("../../src/imgs/user/user.webp") top center / 190% no-repeat;
+      background: url("imgs/user/user.webp") top center / 190% no-repeat;
       position: relative;
 
       @media (max-width: 1199px) {
@@ -61,7 +61,7 @@
           height: 60%;
           bottom: -20%;
           left: 0;
-          background: url("../../src/imgs/decor/figure.svg") center right / cover no-repeat;
+          background: url("imgs/decor/figure.svg") center right / cover no-repeat;
         }
 
         &::after {
@@ -74,7 +74,7 @@
           top: 76%;
           z-index: -1;
           display: inline-block;
-          background: url("../../src/imgs/decor/decor.svg") top left / contain repeat;
+          background: url("imgs/decor/decor.svg") top left / contain repeat;
         }
       }
     }

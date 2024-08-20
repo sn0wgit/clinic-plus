@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Клиника плюс - главная
+  body(data-simplebar)
+    .wrapper
+      .wrapper__body
+        include ../components/header/header.pug
+        - var basePath = "."
+        +header(basePath)
+        main.main
+          include ../blocks/cta/cta.pug
+          include ../blocks/prices/prices.pug
+          include ../blocks/steps/steps.pug
+          include ../blocks/about/about.pug
+          include ../blocks/licenses/licenses.pug
+          include ../blocks/doctors/doctors.pug
+          include ../blocks/reports/reports.pug
+      include ../components/footer/footer.pug
+      - var basePath = "."
+      +footer(basePath)
+    script(src="https://kit.fontawesome.com/214ec3578d.js", crossorigin="anonymous")
+    script(type="module", src="src/main.js")

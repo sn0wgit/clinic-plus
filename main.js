@@ -1,21 +1,19 @@
-import "./scss/base.scss";
+import "./src/scss/base.scss";
 
-import { header } from "./components/header/header.js"
+import { header } from "./src/components/header/header.js"
 header();
 
-import { reports } from "./blocks/reports/reports.js"
+import { reports } from "./src/blocks/reports/reports.js"
 reports();
 
-import { services } from "./blocks/services/services.js"
+import { services } from "./src/blocks/services/services.js"
 services();
 
-import { feedback } from "./blocks/feedback/feedback.js"
+import { feedback } from "./src/blocks/feedback/feedback.js"
 feedback();
 
-import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
+import { useDynamicAdapt } from "./src/libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();
-
-import "./libraries/emailjs/email.min.js";
 
 import "simplebar";
 import "simplebar/dist/simplebar.css";

@@ -3,16 +3,16 @@ html(lang="ru-RU")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Клиника плюс - контакты
+    title Клиника плюс - услуги
   body(data-simplebar)
     .wrapper
       .wrapper__body
-        include src/components/header/header.pug
+        include ../components/header/header.pug
         - var basePath = "."
         +header(basePath)
         main.main
-          include src/blocks/contacts/contacts.pug
-      include src/components/footer/footer.pug
+          include ../blocks/services/services.pug
+      include ../components/footer/footer.pug
       - var basePath = "."
       +footer(basePath)
     script(src="https://kit.fontawesome.com/214ec3578d.js", crossorigin="anonymous")
