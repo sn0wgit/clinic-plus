@@ -1,8 +1,10 @@
 import Swiper from "swiper";
+import { Navigation } from "swiper/modules";
 
 export const reports = () => {
   if (document.querySelector(".reports__slider")) {
     new Swiper(".reports__slider", {
+      modules: [Navigation],
       slidesPerView: 2,
       spaceBetween: 50,
       navigation: {
