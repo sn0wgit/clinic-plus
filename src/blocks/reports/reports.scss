@@ -27,15 +27,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+
+    &-container {
+      width: 100%;
+      overflow: hidden;
+    }
 
     &-wrapper {
       width: 100%;
     }
 
     &-menu {
-      width: 100%;
+      width: 100vw;
       position: absolute;
+      left: calc(799px - 50vw);
       z-index: 1;
       display: flex;
       gap: 20px;
@@ -44,10 +49,11 @@
 
       @media (max-width: 1080px) {
         position: static;
+        width: 100%;
       }
 
-      &-item {
-        width: 100%;
+      @media (max-width: 1632px) {
+        left: -16px;
       }
     }
 
@@ -179,5 +185,17 @@
       gap: 16px;
       flex-direction: column;
     }
+  }
+}
+
+li.swiper-slide {
+  width: calc((100vw - (100vw - 1598px) - 5px) / 2) !important;
+
+  @media (max-width: 1632px) {
+    width: calc(50vw - 19.5px) !important;
+  }
+
+  @media (max-width: 1023px) {
+    width: calc(100vw - 34px) !important;
   }
 }
